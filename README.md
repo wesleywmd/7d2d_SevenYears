@@ -4,6 +4,8 @@ Set seven years after the world fell apart and the dead started trying to eat us
 
 As a field operative, your job is to go out and find resources to send home. This is what you were doing when your helicopter had a mechanical failure and crash landed. Can you gather the supplies needed to keep home alive while keeping yourself alive too? What new threats will you have to deal with?
 
+This Overhaul is still in beta and not complete. Feedback is needed and appriciated. 
+
 # Compatibility
 
 Latest version is working with Alpha 20.4
