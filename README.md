@@ -9,6 +9,12 @@ As a field operative, your job is to go out and find resources to send home. Thi
 Latest version is working with Alpha 20.4
 Untested for multiplayer so far 
 
+# Installation
+
+Drop all of the modlets contained in this overhaul into your mods folder. That should be it. Nothing special.
+
+This overhaul was written without any other mods or molets installed. Currently, it is meant to be stand alone with no other mods installed. I will add a compatability list for popular mods that will work with this overhaul.
+
 # Changelog
 
 - v0.2 - Initial Beta Release - 4/26/2022
