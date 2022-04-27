@@ -1,0 +1,87 @@
+<sevenyears>
+
+	<append xpath="/recipes">
+
+		<recipe name="palletEmptyStack" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="palletEmpty" count="5"/>
+		</recipe>
+
+		<recipe name="woodPlanksStack" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourceWood" count="500"/>
+		</recipe>
+
+		<recipe name="palletBlueTarpBase" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourceCobblestones" count="500"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="palletBrownBoxesBase" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="palletCompressedCardboard" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourcePaper" count="500"/>
+		</recipe>
+
+		<recipe name="cntBarrelPlasticQuadA" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="cntBarrelPlasticSingle00" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="palletWhiteBagsLoose" count="1" craft_time="10" craft_exp_gain="0">
+			<ingredient name="resourceCement" count="125"/>
+			<ingredient name="resourcePaper" count="2"/>
+		</recipe>
+
+		<recipe name="palletWhiteBagsBase" count="1" craft_time="5" craft_exp_gain="0">
+			<ingredient name="palletWhiteBagsLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="palletBricksBase" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourceRockSmall" count="500"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="metalPipeStack" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourceMetalPipe" count="250"/>
+		</recipe>
+
+		<recipe name="palletCans" count="1" craft_time="20" craft_exp_gain="0">
+			<ingredient name="resourceScrapIron" count="500"/>
+		</recipe>
+
+		<recipe name="decoHandTruckPallet" craft_time="5" craft_exp_gain="0">
+			<ingredient name="decoHandTruck" count="4"/>
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="oldChairPallet" craft_time="5" craft_exp_gain="0">
+			<ingredient name="oldChair1VariantHelper" count="12"/>
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="officeChairPallet" craft_time="5" craft_exp_gain="0">
+			<ingredient name="officeChair01VariantHelper" count="12"/>
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="woodChairPallet" craft_time="5" craft_exp_gain="0">
+			<ingredient name="woodChair1" count="12"/>
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+		<recipe name="barracksChairPallet" craft_time="5" craft_exp_gain="0">
+			<ingredient name="barracksChair" count="12"/>
+			<ingredient name="palletBrownBoxesLoose" count="4"/>
+			<ingredient name="palletEmpty" count="1"/>
+		</recipe>
+
+	</append>
+
+</sevenyears>

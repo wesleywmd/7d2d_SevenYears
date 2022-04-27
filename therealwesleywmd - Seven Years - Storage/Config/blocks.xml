@@ -1,0 +1,170 @@
+<sevenyears>
+
+	<remove xpath="/blocks/block[@name='cntShoppingBasketEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyTeal' or @name='cntShoppingBasketTeal']">
+		<drop event="Destroy" name="cntShoppingBasketTeal" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyRed' or @name='cntShoppingBasketRed']">
+		<drop event="Destroy" name="cntShoppingBasketRed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyGreen' or @name='cntShoppingBasketGreen']">
+		<drop event="Destroy" name="cntShoppingBasketGreen" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyBlue' or @name='cntShoppingBasketBlue']">
+		<drop event="Destroy" name="cntShoppingBasketBlue" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyYellow' or @name='cntShoppingBasketYellow']">
+		<drop event="Destroy" name="cntShoppingBasketYellow" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyWhite' or @name='cntShoppingBasketWhite']">
+		<drop event="Destroy" name="cntShoppingBasketWhite" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingBasketEmptyOrange' or @name='cntShoppingBasketOrange']">
+		<drop event="Destroy" name="cntShoppingBasketOrange" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntWaterCoolerFull']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntWaterCoolerFull']">
+		<drop event="Destroy" name="cntWaterCoolerFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntWaterCoolerBottle']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntWaterCoolerBottle']">
+		<drop event="Destroy" name="cntWaterCoolerBottle" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntMetalDesk02RandomLootHelper']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntMetalDesk02RandomLootHelper']">
+		<drop event="Destroy" name="cntMetalDesk02Closed" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntFileCabinetShortRandomLootHelper']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntFileCabinetShortRandomLootHelper']">
+		<drop event="Destroy" name="cntFileCabinetShortClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFileCabinetTallRandomLootHelper' or @name='cntFileCabinetTallOpen' or @name='cntFileCabinetTallClosed']">
+		<drop event="Destroy" name="cntFileCabinetShortClosed" count="0"/>
+		<drop event="Destroy" name="cntFileCabinetTallClosed" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='laundryCartEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='laundryCartEmpty']">
+		<drop event="Destroy" name="laundryCartFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntShoppingCart' or @name='cntShoppingCartEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntShoppingCart']">
+		<drop event="Destroy" name="cntShoppingCart" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntShoppingCartEmpty']">
+		<drop event="Destroy" name="cntShoppingCart" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntUtilityCartEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntUtilityCartEmpty']">
+		<drop event="Destroy" name="cntUtilityCartFull" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntJanitorCartFull']">
+		<drop event="Destroy" name="cntUtilityCartFull" count="0"/>
+		<drop event="Destroy" name="cntJanitorCartFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntTiltTruckEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntTiltTruckEmpty']">
+		<drop event="Destroy" name="cntTiltTruckFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntStoveOldVer1Closed']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntStoveOldVer1Closed']">
+		<drop event="Destroy" name="cntStoveOldVer1Closed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntStoveModernVer1Closed' or @name='cntStoveModernVer2Open']">
+		<drop event="Destroy" name="cntStoveOldVer1Closed" count="0"/>
+		<drop event="Destroy" name="cntStoveModernVer1Closed" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntWoodBurningStove']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntWoodBurningStove']">
+		<drop event="Destroy" name="cntWoodBurningStove" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']">
+		<drop event="Destroy" name="cntMicrowaveOvenVer1Closed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntMicrowaveOvenVer2Open' or @name='cntMicrowaveOvenVer2Closed']">
+		<drop event="Destroy" name="cntStoveOldVer1Closed" count="0"/>
+		<drop event="Destroy" name="cntStoveModernVer2Closed" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntToaster']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntToaster']">
+		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+		<drop event="Destroy" name="cntToaster" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntCoffeeMaker']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntCoffeeMaker']">
+		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+		<drop event="Destroy" name="cntCoffeeMaker" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntCoffeeMakerCommercial']">
+		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+		<drop event="Destroy" name="cntCoffeeMaker" count="0"/>
+		<drop event="Destroy" name="cntCoffeeMakerCommercial" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntSodaFountain']">
+		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+		<drop event="Destroy" name="cntCoffeeMaker" count="0"/>
+		<drop event="Destroy" name="cntSodaFountain" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntRetroFridgeVer1Closed']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntRetroFridgeVer1Closed']">
+		<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFridgeStainlessSteelVer2Open']">
+		<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0"/>
+		<drop event="Destroy" name="cntFridgeStainlessSteel" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFridgeStainlessSteel']">
+		<drop event="Destroy" name="cntRetroFridgeVer1Closed" count="0"/>
+		<drop event="Destroy" name="cntFridgeStainlessSteel" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntTrash_can01']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntTrash_can01']">
+		<drop event="Destroy" name="cntTrash_can01" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntBin']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntBin']">
+		<drop event="Destroy" name="cntBin" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntFancyGarbageCan']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntFancyGarbageCan']">
+		<drop event="Destroy" name="cntFancyGarbageCan" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntDomedTrashCanEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntDomedTrashCanEmpty']">
+		<drop event="Destroy" name="cntDomedTrashCanFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntDomedTrashCanCornerEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntDomedTrashCanCornerEmpty']">
+		<drop event="Destroy" name="cntDomedTrashCanCornerFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntBruteStyleTrashCanEmpty']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntBruteStyleTrashCanEmpty']">
+		<drop event="Destroy" name="cntBruteStyleTrashCanFull" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntDumpster' or @name='cntDumpsterFlies']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntDumpster' or @name='cntDumpsterFlies']">
+		<drop event="Destroy" name="cntDumpster" count="1"/>
+	</append>
+
+</sevenyears>

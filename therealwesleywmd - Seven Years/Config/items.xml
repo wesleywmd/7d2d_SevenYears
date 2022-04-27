@@ -1,0 +1,72 @@
+<sevenyears>
+
+	<!-- 1. resourceAnimalFat -->
+	<setattribute xpath="/items/item[@name='resourceAnimalFat']/property[@name='Stacknumber']" name="value">100</setattribute>
+	<setattribute xpath="/items/item[@name='resourceAnimalFat']/property[@name='EconomicValue']" name="value">2</setattribute>
+	<remove xpath="/items/item[@name='resourceAnimalFat']/property[@class='Action0']"/>
+	<remove xpath="/items/item[@name='resourceAnimalFat']/effect_group"/>
+
+	<!-- 2. resourceBone -->
+	<setattribute xpath="/items/item[@name='resourceBone']/property[@name='Stacknumber']" name="value">100</setattribute>
+	<setattribute xpath="/items/item[@name='resourceBone']/property[@name='EconomicValue']" name="value">2</setattribute>
+	<setattribute xpath="/items/item[@name='resourceBone']/property[@name='EconomicBundleSize']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceBone']/property[@name='SellableToTrader']" name="value">true</setattribute>
+
+	<!-- 5. resourceCloth-->
+	<setattribute xpath="/items/item[@name='resourceCloth']/property[@name='Stacknumber']" name="value">100</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCloth']/property[@name='EconomicValue']" name="value">2</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCloth']/property[@name='EconomicBundleSize']" name="value">1</setattribute>
+
+	<!-- 8. resourceFeather-->
+	<setattribute xpath="/items/item[@name='resourceFeather']/property[@name='Stacknumber']" name="value">100</setattribute>
+	<setattribute xpath="/items/item[@name='resourceFeather']/property[@name='EconomicValue']" name="value">2</setattribute>
+	<setattribute xpath="/items/item[@name='resourceFeather']/property[@name='EconomicBundleSize']" name="value">1</setattribute>
+
+	<!-- 10. resourceLeather-->
+	<setattribute xpath="/items/item[@name='resourceLeather']/property[@name='Stacknumber']" name="value">100</setattribute>
+	<setattribute xpath="/items/item[@name='resourceLeather']/property[@name='EconomicValue']" name="value">2</setattribute>
+<!--	<setattribute xpath="/items/item[@name='resourceLeather']/property[@name='EconomicBundleSize']" name="value">1</setattribute>-->
+
+	<!-- 11. resourceOilShale-->
+	<setattribute xpath="/items/item[@name='resourceOilShale']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceOilShale']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceOilShale']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 13. resourcePotassiumNitratePowder -->
+	<setattribute xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourcePotassiumNitratePowder']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 14. resourceRockSmall -->
+	<setattribute xpath="/items/item[@name='resourceRockSmall']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceRockSmall']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceRockSmall']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceRockSmall']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 19. resourceSnowBall -->
+	<setattribute xpath="/items/item[@name='resourceSnowBall']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceSnowBall']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceSnowBall']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 20. resourceWood -->
+	<setattribute xpath="/items/item[@name='resourceWood']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceWood']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceWood']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 21. resourceYuccaFibers -->
+	<setattribute xpath="/items/item[@name='resourceYuccaFibers']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceYuccaFibers']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceYuccaFibers']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 4. resourceCement -->
+	<!-- 5. resourceCobblestones -->
+	<!-- 1. resourceDuctTape -->
+	<!-- 6. resourceGunpowder -->
+
+	<!-- 1. oldCash -->
+	<!-- 2. resourceConcreteMix -->
+	<!-- 3. resourceMilitaryFiber -->
+	<!-- 4. resourceRepairKit -->
+
+
+</sevenyears>

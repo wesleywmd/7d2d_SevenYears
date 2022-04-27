@@ -1,0 +1,99 @@
+<sevenyears>
+
+	<setattribute xpath="/recipes/recipe[@name='resourceForgedSteel']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceArrowHeadSteelAP']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='meleeWpnKnucklesT3SteelKnuckles']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='meleeWpnSledgeT3SteelSledgehammer']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='meleeToolSalvageT2Ratchet']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='armorSteelBoots']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='armorSteelChest']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='armorSteelGloves']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='armorSteelHelmet']" name="craft_area">forgeSteel</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='armorSteelLegs']" name="craft_area">forgeSteel</setattribute>
+
+	<setattribute xpath="/recipes/recipe[@name='drinkJarEmpty']" name="craft_area">forgeKiln</setattribute>
+
+	<append xpath="/recipes">
+
+		<recipe name="forgeApocalypse" count="1">
+			<ingredient name="resourceRockSmall" count="50"/>
+			<ingredient name="resourceClayLump" count="60"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceMetalPipe" count="3"/>
+		</recipe>
+		<recipe name="forgeSteel" count="1">
+			<ingredient name="resourceRockSmall" count="50"/>
+			<ingredient name="resourceClayLump" count="60"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceMetalPipe" count="3"/>
+		</recipe>
+		<recipe name="forgeKiln" count="1">
+			<ingredient name="resourceRockSmall" count="50"/>
+			<ingredient name="resourceClayLump" count="60"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceMetalPipe" count="3"/>
+		</recipe>
+
+		<recipe name="resourceClayLump" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="resourceCrushedSand" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_glass" count="4"/>
+		</recipe>
+		<recipe name="resourceRockSmall" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_stone" count="5"/>
+		</recipe>
+		<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_brass" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapIron" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_iron" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapLead" count="1" material_based="true" craft_area="forgeApocalypse" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_lead" count="1"/>
+		</recipe>
+
+		<recipe name="resourceClayLump" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="resourceCrushedSand" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_glass" count="4"/>
+		</recipe>
+		<recipe name="resourceRockSmall" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_stone" count="5"/>
+		</recipe>
+		<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_brass" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapIron" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_iron" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapLead" count="1" material_based="true" craft_area="forgeSteel" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_lead" count="1"/>
+		</recipe>
+
+		<recipe name="resourceClayLump" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_clay" count="5"/>
+		</recipe>
+		<recipe name="resourceCrushedSand" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_glass" count="4"/>
+		</recipe>
+		<recipe name="resourceRockSmall" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_stone" count="5"/>
+		</recipe>
+		<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_brass" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapIron" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_iron" count="1"/>
+		</recipe>
+		<recipe name="resourceScrapLead" count="1" material_based="true" craft_area="forgeKiln" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_lead" count="1"/>
+		</recipe>
+
+	</append>
+
+</sevenyears>

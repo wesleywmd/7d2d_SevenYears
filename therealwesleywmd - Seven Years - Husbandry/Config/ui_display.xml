@@ -1,0 +1,27 @@
+<sevenyears>
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+	
+		<crafting_category_list display_type="rabbitden">
+			<crafting_category name="RD_Rabbits" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="chickencoop">
+			<crafting_category name="CC_Chickens" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="feedMixer">
+			<crafting_category name="FM_Feeds" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="reptileTerrarium">
+			<crafting_category name="RT_Snakes" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="pigrun">
+			<crafting_category name="PR_Pigs" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+	
+	</append>
+
+</sevenyears>

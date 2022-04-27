@@ -1,0 +1,60 @@
+<sevenyears>
+
+	<remove xpath="/blocks/block[@name='forge']/property[@name='UnlockedBy']"/>
+
+	<append xpath="/blocks">
+
+		<block name="forgeApocalypse">
+			<property name="Extends" value="forge"/>
+			<property name="CustomIcon" value="forge"/>
+			<property name="CustomIconTint" value="e0b191"/>
+			<property name="TintColor" value="e0b191"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="forgeApocalypse"/>
+				<property name="Modules" value="tools,output,fuel,material_input"/>
+				<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+			</property>
+			<property name="DescriptionKey" value="forgeDesc"/>
+			<property name="EconomicValue" value="1000"/>
+		</block>
+
+		<block name="forgeSteel">
+			<property name="Extends" value="forge"/>
+			<property name="CustomIcon" value="forge"/>
+			<property name="CustomIconTint" value="a0a0ff"/>
+			<property name="TintColor" value="a0a0ff"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="forgeSteel"/>
+				<property name="Modules" value="tools,output,fuel,material_input"/>
+				<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+			</property>
+			<property name="DescriptionKey" value="forgeDesc"/>
+			<property name="EconomicValue" value="1000"/>
+		</block>
+
+		<block name="forgeKiln">
+			<property name="Extends" value="forge"/>
+			<property name="CustomIcon" value="forge"/>
+			<property name="CustomIconTint" value="ffa9a3"/>
+			<property name="TintColor" value="ffa9a3"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="forgeKiln"/>
+				<property name="Modules" value="tools,output,fuel,material_input"/>
+				<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>
+			</property>
+			<property name="DescriptionKey" value="forgeDesc"/>
+			<property name="EconomicValue" value="1000"/>
+		</block>
+
+	</append>
+
+</sevenyears>

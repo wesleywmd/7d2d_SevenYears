@@ -1,0 +1,47 @@
+<sevenyears>
+
+	<append xpath="/xui/ruleset[@name='default']" >
+
+		<window_group name="workstation_beehive" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<!--<window name="windowToolsBeehive"/>-->>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_compostMixer" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<!--<window name="windowToolsCompostMixer"/>-->
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_farmersWorkbench" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<!--<window name="windowToolsCompostMixer"/>-->
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_greenhouse" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<!--<window name="windowToolsCompostMixer"/>-->
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+	</append>
+
+</sevenyears>

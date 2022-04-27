@@ -1,0 +1,14 @@
+<sevenyears>
+
+	<append xpath="/buffs">
+
+		<buff name="buffNoHarvestExp" name_key="buff No Harvest Exp" icon="ui_game_symbol_mining" hidden="false" remove_on_death="true">
+			<duration value="3"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="-1" tags="Harvesting"/>
+			</effect_group>
+		</buff>
+
+	</append>
+
+</sevenyears>

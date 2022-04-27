@@ -1,0 +1,66 @@
+<sevenyears>
+
+	<remove xpath="/items/item[@name='resourceScrapPolymers']" />
+
+	<append xpath="/items/item[@name='resourcePaper']/property[@name='Group']/@value">,TC_Papers</append>
+	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<append xpath="/items">
+
+		<item name="plasticMaster">
+			<property name="DescriptionKey" value="plasticObjectGroupDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk,garbage"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapPolymers"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Garbage"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="1"/>
+		</item>
+
+		<item name="resourceScrapPolymers">
+			<property name="Extends" value="plasticMaster"/>
+			<property name="Stacknumber" value="200"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="Group" value="Resources,Refined,TC_Plastics"/>
+			<property name="CraftingIngredientTime" value=".2"/>
+		</item>
+
+		<item name="plasticBag">
+			<property name="Extends" value="plasticMaster"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicBundleSize" value="10"/>
+		</item>
+
+		<item name="plasticChemicalBottle">
+			<property name="Extends" value="plasticMaster"/>
+			<property name="Stacknumber" value="25"/>
+		</item>
+
+		<item name="plasticFoodContainer">
+			<property name="Extends" value="plasticMaster" />
+			<property name="Stacknumber" value="25"/>
+		</item>
+
+		<item name="plasticSodaBottle">
+			<property name="Extends" value="plasticMaster" />
+			<property name="Stacknumber" value="25"/>
+		</item>
+
+		<item name="plasticStorageContainer">
+			<property name="Extends" value="plasticMaster" />
+			<property name="Stacknumber" value="10"/>
+		</item>
+
+		<item name="plasticWaterBottle">
+			<property name="Extends" value="plasticMaster" />
+			<property name="Stacknumber" value="25" />
+		</item>
+
+	</append>
+
+</sevenyears>

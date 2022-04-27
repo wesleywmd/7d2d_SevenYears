@@ -1,0 +1,26 @@
+<sevenyears>
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+	
+		<crafting_category_list display_type="beehive">
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="compostMixer">
+			<crafting_category name="CM_Compost" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="CM_Farming" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="farmersWorkbench">
+			<crafting_category name="FW_Seeds" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="FW_Jams" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="greenhouse">
+			<crafting_category name="GH_Crops" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="GH_Herbs" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+		</crafting_category_list>
+	
+	</append>
+
+</sevenyears>

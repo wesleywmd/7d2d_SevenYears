@@ -1,0 +1,104 @@
+<sevenyears>
+
+    <append xpath="/items">
+
+        <item name="husbandryMaster">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Morganic"/>
+            <property name="Weight" value="5"/>
+            <property name="Group" value="Resources"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="EconomicValue" value="1"/>
+        </item>
+
+        <item name="husbandryDeadAnimalMaster">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="Stacknumber" value="5"/>
+            <property class="Action0">
+                <property name="Class" value="OpenBundle"/>
+                <property name="Delay" value="0"/>
+                <property name="Use_time" value="0"/>
+                <property name="Create_item" value="foodRawMeat,resourceBone,resourceLeather,resourceAnimalFat"/>
+                <property name="Create_item_count" value="1,1,1,1"/>
+            </property>
+        </item>
+
+        <item name="husbandryDeadRabbit">
+            <property name="Extends" value="husbandryDeadAnimalMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,RD_Rabbits"/>
+            <property class="Action0">
+                <property name="Create_item" value="foodRawMeat,resourceBone,resourceLeather"/>
+                <property name="Create_item_count" value="10,6,1"/>
+            </property>
+        </item>
+
+        <item name="husbandryDeadChicken">
+            <property name="Extends" value="husbandryDeadAnimalMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,CC_Chickens"/>
+            <property class="Action0">
+                <property name="Create_item" value="foodRawMeat,resourceBone,resourceFeather"/>
+                <property name="Create_item_count" value="10,6,23"/>
+            </property>
+        </item>
+
+        <item name="husbandryDeadPig">
+            <property name="Extends" value="husbandryDeadAnimalMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,PR_Pigs"/>
+            <property class="Action0">
+                <property name="Create_item" value="foodRawMeat,resourceBone,resourceLeather,resourceAnimalFat"/>
+                <property name="Create_item_count" value="30,20,7,4"/>
+            </property>
+        </item>
+
+        <item name="husbandryDeadSnake">
+            <property name="Extends" value="husbandryDeadAnimalMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,RT_Snakes"/>
+            <property class="Action0">
+                <property name="Create_item" value="foodRawMeat,resourceBone,husbandrySnakeVenom"/>
+                <property name="Create_item_count" value="10,5,2"/>
+            </property>
+        </item>
+
+        <item name="husbandryBabyRabbit">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,RD_Rabbits"/>
+        </item>
+
+        <item name="husbandryBabyChicken">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,CC_Chickens"/>
+        </item>
+
+        <item name="husbandryChickenFeed">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="Stacknumber" value="100"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,FM_Feeds"/>
+        </item>
+
+        <item name="husbandryPigFeed">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="CustomIcon" value="husbandryChickenFeed"/>
+            <property name="CustomIconTint" value="FCA9A9"/>
+            <property name="Stacknumber" value="100"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="Group" value="Resources,FM_Feeds"/>
+        </item>
+
+        <item name="husbandrySnakeVenom">
+            <property name="Extends" value="husbandryMaster"/>
+            <property name="Stacknumber" value="100"/>
+            <property name="EconomicValue" value="6"/>
+        </item>
+
+    </append>
+
+</sevenyears>

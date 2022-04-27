@@ -1,0 +1,5 @@
+<sevenyears>
+
+	<remove xpath="/recipes/recipe[@name='cntSecureStorageChest']"/>
+
+</sevenyears>

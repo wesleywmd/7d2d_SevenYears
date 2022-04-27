@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="therealwesleywmd - Seven Years - Decorations" />
+		<Description value="Makes many of the decoration items able to be harvested or just picked up like chairs in
+							vanilla. These are mainly for decoration purposes an can be sold to traders for a little
+							extra coin." />
+		<Author value="therealwesleywmd" />
+		<Version value="0.01" />
+	</ModInfo>
+</xml>

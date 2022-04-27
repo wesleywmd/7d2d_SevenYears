@@ -1,0 +1,7 @@
+<sevenyears>
+
+    <setattribute xpath="/items/item[@name='foodBaconAndEggs']" name="Group">Food/Cooking,GasGrillCommon</setattribute>
+
+    <remove xpath="/items/item[@name='foodBaconAndEggs']/property[@name='UnlockedBy']"/>
+
+</sevenyears>

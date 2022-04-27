@@ -1,0 +1,40 @@
+<sevenyears>
+
+	<remove xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='forge']"/>
+	
+	<append xpath="/ui_display_info/crafting_category_display">
+
+		<crafting_category_list display_type="forge">
+			<crafting_category name="ForgeResources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="ForgeBuilding" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />
+			<crafting_category name="ForgeAmmoWeapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="ForgeToolsTraps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="ForgeSmelting" icon="ui_game_symbol_forge" display_name="lblCategorySmelting" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="forgeApocalypse">
+			<crafting_category name="ForgeResources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="ForgeAmmoWeapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="ForgeToolsTraps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="ForgeSmelting" icon="ui_game_symbol_forge" display_name="lblCategorySmelting" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="forgeSteel">
+			<crafting_category name="ForgeResources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="ForgeAmmoWeapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="ForgeToolsTraps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="ForgeArmor" icon="ui_game_symbol_armor_iron" display_name="lblCategoryArmor" />
+			<crafting_category name="ForgeSmelting" icon="ui_game_symbol_forge" display_name="lblCategorySmelting" />
+		</crafting_category_list>
+
+		<crafting_category_list display_type="forgeKiln">
+			<crafting_category name="ForgeResources" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />
+			<crafting_category name="ForgeAmmoWeapons" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />
+			<crafting_category name="ForgeToolsTraps" icon="ui_game_symbol_tool" display_name="lblCategoryToolsTraps" />
+			<crafting_category name="ForgeArmor" icon="ui_game_symbol_armor_iron" display_name="lblCategoryArmor" />
+			<crafting_category name="ForgeSmelting" icon="ui_game_symbol_forge" display_name="lblCategorySmelting" />
+		</crafting_category_list>
+	
+	</append>
+
+</sevenyears>

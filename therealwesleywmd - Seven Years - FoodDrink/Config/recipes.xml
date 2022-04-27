@@ -1,0 +1,7 @@
+<sevenyears>
+
+<!--	<setattribute xpath="/recipes/recipe[@name='foodBaconAndEggs']" name="craft_area">gasGrill</setattribute>-->
+<!--	<removeattribute xpath="/recipes/recipe[@name='foodBaconAndEggs']/@craft_tool"/>-->
+<!--	<removeattribute xpath="/recipes/recipe[@name='foodBaconAndEggs']/@tags"/>-->
+
+</sevenyears>

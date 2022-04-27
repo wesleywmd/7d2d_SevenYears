@@ -1,0 +1,31 @@
+<sevenyears>
+
+    <append xpath="/traders">
+
+        <trader_info id="30" full_reset="true" reset_interval="1" allow_sell="true"
+                     min_inventory="16" max_inventory="25" min_items_swapped="10" max_items_swapped="15">
+            <trader_items count="20">
+                <item group="foodVending"/>
+                <item group="foodCandy" count="1" prob="0.70"/>
+            </trader_items>
+        </trader_info>
+
+        <trader_info id="31" full_reset="true" reset_interval="1" allow_sell="true"
+                     min_inventory="16" max_inventory="25" min_items_swapped="10" max_items_swapped="15">
+            <trader_items count="20">
+                <item group="foodVending"/>
+                <item group="foodCandy" count="1" prob="0.70"/>
+            </trader_items>
+        </trader_info>
+
+        <trader_info id="32" full_reset="true" reset_interval="1" allow_sell="true"
+                     min_inventory="16" max_inventory="25" min_items_swapped="10" max_items_swapped="15">
+            <trader_items count="20">
+                <item group="foodVending"/>
+                <item group="foodCandy" count="1" prob="0.70"/>
+            </trader_items>
+        </trader_info>
+
+    </append>
+
+</sevenyears>

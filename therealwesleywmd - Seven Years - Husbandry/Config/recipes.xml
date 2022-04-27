@@ -1,0 +1,53 @@
+<sevenyears>
+
+    <append xpath="/recipes">
+
+        <recipe name="husbandryDeadRabbit" craft_area="rabbitden" count="1" craft_time="30" craft_exp_gain="1">
+            <ingredient name="resourceYuccaFibers" count="20"/>
+            <ingredient name="drinkJarBoiledWater" count="2"/>
+        </recipe>
+
+        <recipe name="husbandryBabyRabbit" craft_area="rabbitden" count="2" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceYuccaFibers" count="15"/>
+            <ingredient name="drinkJarBoiledWater" count="2"/>
+        </recipe>
+
+        <recipe name="husbandryDeadChicken" craft_area="chickencoop" count="1" craft_time="30" craft_exp_gain="1">
+            <ingredient name="husbandryChickenFeed" count="20"/>
+            <ingredient name="drinkJarBoiledWater" count="2"/>
+        </recipe>
+
+        <recipe name="husbandryBabyChicken" craft_area="chickencoop" count="2" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceYuccaFibers" count="15"/>
+            <ingredient name="drinkJarBoiledWater" count="2"/>
+        </recipe>
+
+        <recipe name="husbandryChickenFeed" craft_area="feedMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropCorn" count="5"/>
+            <ingredient name="resourceYuccaFibers" count="15"/>
+        </recipe>
+
+        <recipe name="husbandryPigFeed" craft_area="feedMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropCorn" count="3"/>
+            <ingredient name="foodCropPotato" count="3"/>
+            <ingredient name="foodCropMushrooms" count="4"/>
+        </recipe>
+
+        <recipe name="husbandryDeadPig" craft_area="pigrun" count="1" craft_time="30" craft_exp_gain="1">
+            <ingredient name="husbandryPigFeed" count="5"/>
+            <ingredient name="drinkJarBoiledWater" count="10"/>
+        </recipe>
+
+        <recipe name="husbandryDeadSnake" craft_area="reptileTerrarium" count="1" craft_time="30" craft_exp_gain="1">
+            <ingredient name="husbandryBabyRabbit" count="3"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <recipe name="husbandryDeadSnake" craft_area="reptileTerrarium" count="1" craft_time="30" craft_exp_gain="1">
+            <ingredient name="husbandryBabyChicken" count="3"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+    </append>
+
+</sevenyears>

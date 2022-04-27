@@ -1,0 +1,96 @@
+<sevenyears>
+
+	<setattribute xpath="/items/item[@name='resourceBrokenGlass']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceBrokenGlass']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceBrokenGlass']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<remove xpath="/items/item[@name='resourceBrokenGlass']/property[@class='Action0']"/>
+	<remove xpath="/items/item[@name='resourceBrokenGlass']/effect_group"/>
+
+	<!-- 4. resourceClayLump-->
+	<setattribute xpath="/items/item[@name='resourceClayLump']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceClayLump']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceClayLump']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceClayLump']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 6. resourceCoal-->
+	<setattribute xpath="/items/item[@name='resourceCoal']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCoal']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCoal']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+
+	<!-- 7. resourceCrushedSand-->
+	<setattribute xpath="/items/item[@name='resourceCrushedSand']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCrushedSand']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCrushedSand']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCrushedSand']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 9. resourceIronFragment-->
+
+	<!-- 15. resourceScrapBrass -->
+	<setattribute xpath="/items/item[@name='resourceScrapBrass']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapBrass']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapBrass']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapBrass']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 16. resourceScrapIron -->
+	<setattribute xpath="/items/item[@name='resourceScrapIron']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapIron']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapIron']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapIron']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 17. resourceScrapLead -->
+	<setattribute xpath="/items/item[@name='resourceScrapLead']/property[@name='Stacknumber']" name="value">200</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapLead']/property[@name='EconomicValue']" name="value">1</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapLead']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceScrapLead']/property[@name='Group']" name="value">Resources,ForgeSmelting</setattribute>
+
+	<!-- 1. drinkCanEmpty -->
+	<setattribute xpath="/items/item[@name='drinkCanEmpty']/property[@name='Stacknumber']" name="value">50</setattribute>
+	<setattribute xpath="/items/item[@name='drinkCanEmpty']/property[@name='EconomicValue']" name="value">5</setattribute>
+	<setattribute xpath="/items/item[@name='drinkCanEmpty']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>
+
+	<!-- 1. drinkCanEmpty -->
+	<setattribute xpath="/items/item[@name='drinkJarEmpty']/property[@name='Stacknumber']" name="value">50</setattribute>
+	<setattribute xpath="/items/item[@name='drinkJarEmpty']/property[@name='EconomicValue']" name="value">2</setattribute>
+	<setattribute xpath="/items/item[@name='drinkJarEmpty']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>
+
+
+	<!-- 2. resourceCandleStick -->
+	<setattribute xpath="/items/item[@name='resourceCandleStick']/property[@name='Stacknumber']" name="value">50</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCandleStick']/property[@name='EconomicValue']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourceCandleStick']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>
+
+	<!-- 3. resourceCandyTin -->
+
+	<!-- 6. resourceDoorKnob -->
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='Stacknumber']" name="value">50</setattribute>
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='EconomicValue']" name="value">7</setattribute>
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>
+
+	<!-- 7. resourceFishingWeight -->
+	<!-- 8. resourceGoldNugget -->
+	<!-- 9. resourceMetalPipe -->
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='Stacknumber']" name="value">50</setattribute>
+	<setattribute xpath="/items/item[@name='resourceDoorKnob']/property[@name='EconomicValue']" name="value">7</setattribute>
+	<setattribute xpath="/items/item[@name='resourceMetalPipe']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>
+
+	<!-- 10. resourceNail -->
+	<!-- 11. resourceRawDiamond -->
+	<!-- 12. resourceSilverNugget -->
+	<!-- 13. resourceSpring -->
+	<!-- 14. resourceTrophy1 -->
+	<!-- 15. resourceTrophy2 -->
+	<!-- 16. resourceTrophy3 -->
+
+	<!-- 2. resourceElectricParts -->
+	<!-- 3. resourceElectronicsParts -->
+	<!-- 4. resourceForgedIron -->
+<!--	<setattribute xpath="/items/item[@name='resourceForcedIron']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>-->
+
+	<!-- 5. resourceForgedSteel -->
+<!--	<setattribute xpath="/items/item[@name='resourceForcedSteel']/property[@name='Group']" name="value">Resources,ForgeResources</setattribute>-->
+
+	<!-- 7. resourceMechanicParts -->
+
+	<setattribute xpath="/items/item[@name='armorSteelMaster']/property[@name='Group']" name="value">Armor,TCArmor,ForgeArmor</setattribute>
+
+</sevenyears>

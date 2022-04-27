@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="therealwesleywmd - Seven Years - Storage" />
+		<Description value="Make storage more challenging. Removes standard storage containers. Makes lootable containers recoverable to bring home to store things in. Includes a better balancing of loot container sizes with this in mind." />
+		<Author value="therealwesleywmd" />
+		<Version value="0.01" />
+	</ModInfo>
+</xml>

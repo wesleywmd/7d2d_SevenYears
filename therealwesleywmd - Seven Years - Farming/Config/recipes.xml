@@ -1,0 +1,206 @@
+<sevenyears>
+
+    <remove xpath="/recipes/recipe[@name='farmPlotBlockVariantHelper']"/>
+
+    <remove xpath="/recipes/recipe[@name='plantedAloe1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedBlueberry1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedChrysanthemum1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedCoffee1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedCorn1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedCotton1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedGoldenrod1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedGraceCorn1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedHop1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedMushroom1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedPotato1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedYucca1']"/>
+    <remove xpath="/recipes/recipe[@name='plantedPumpkin1']"/>
+
+    <append xpath="/recipes">
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+        <ingredient name="resourceYuccaFibers" count="50"/>
+    </recipe>
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropChrysanthemumPlant" count="50"/>
+        </recipe>
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCornStock" count="20"/>
+        </recipe>
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceWoodChips" count="1000"/>
+        </recipe>
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceYuccaFibers" count="15"/>
+            <ingredient name="resourceCornStock" count="3"/>
+            <ingredient name="resourceWoodChips" count="250"/>
+        </recipe>
+
+        <recipe name="resourceSoil" craft_area="compostMixer" count="3" craft_time="5" craft_exp_gain="1">
+            <ingredient name="resourceDirt" count="3"/>
+            <ingredient name="resourceCompost" count="1"/>
+        </recipe>
+
+        <recipe name="resourceFertilizer" craft_area="compostMixer" count="5" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCompost" count="4"/>
+            <ingredient name="resourceCompost" count="1"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="15"/>
+        </recipe>
+
+        <recipe name="resourceWoodChips" craft_area="compostMixer" count="200" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceWood" count="10"/>
+        </recipe>
+
+        <recipe name="farmPlotBlockVariantHelper" craft_area="compostMixer" count="1" craft_time="20" craft_exp_gain="1">
+            <ingredient name="resourceWood" count="4"/>
+            <ingredient name="resourceSoil" count="100"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="25"/>
+        </recipe>
+
+        <recipe name="plantedAloe1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropAloeLeaf" count="5"/>
+        </recipe>
+
+        <recipe name="plantedBlueberry1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropBlueberries" count="5"/>
+        </recipe>
+
+        <recipe name="plantedChrysanthemum1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+        </recipe>
+
+        <recipe name="plantedCoffee1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropCoffeeBeans" count="5"/>
+        </recipe>
+
+        <recipe name="plantedCorn1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropCorn" count="5"/>
+        </recipe>
+
+        <recipe name="plantedCotton1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropCottonPlant" count="5"/>
+        </recipe>
+
+        <recipe name="plantedGoldenrod1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropGoldenrodPlant" count="5"/>
+        </recipe>
+
+        <recipe name="plantedGraceCorn1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropGraceCorn" count="5"/>
+        </recipe>
+
+        <recipe name="plantedHop1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCropHopsFlower" count="5"/>
+        </recipe>
+
+        <recipe name="plantedMushroom1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropMushrooms" count="5"/>
+        </recipe>
+
+        <recipe name="plantedPotato1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropPotato" count="5"/>
+        </recipe>
+
+        <recipe name="plantedYucca1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropYuccaFruit" count="5"/>
+        </recipe>
+
+        <recipe name="plantedPumpkin1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropPumpkin" count="5"/>
+        </recipe>
+
+        <recipe name="plantedWheat1" craft_area="farmersWorkbench" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="foodCropWheat" count="5"/>
+        </recipe>
+
+        <recipe name="resourceCropAloeLeaf" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedAloe1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropBlueberries" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedBlueberry1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="resourceCropChrysanthemumPlant" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedChrysanthemum1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="resourceCropCoffeeBeans" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedCoffee1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropCorn" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedCorn1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="resourceCropCottonPlant" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedCotton1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="resourceCropGoldenrodPlant" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedGoldenrod1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropGraceCorn" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedGraceCorn1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="resourceCropHopsFlower" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedHop1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropMushrooms" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedMushroom1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="plantedPotato1" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="foodCropPotato" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropYuccaFruit" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedYucca1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropPumpkin" craft_area="greenhouse" count="18" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedPumpkin1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="foodCropWheat" craft_area="greenhouse" count="24" craft_time="30" craft_exp_gain="1">
+            <ingredient name="plantedWheat1" count="3"/>
+            <ingredient name="resourceFertilizer" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+    </append>
+
+</sevenyears>

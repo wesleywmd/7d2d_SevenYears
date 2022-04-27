@@ -1,0 +1,19 @@
+<sevenyears>
+
+	<append xpath="/ui_display_info/crafting_category_display">
+
+<!--		<crafting_category_list display_type="gasGrill">-->
+<!--			<crafting_category name="GasGrillBasics" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />-->
+<!--			<crafting_category name="GasGrillCommon" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />-->
+<!--			<crafting_category name="GasGrillAdvanced" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />-->
+<!--		</crafting_category_list>-->
+
+<!--		<crafting_category_list display_type="charcoalGrill">-->
+<!--			<crafting_category name="GasGrillBasics" icon="ui_game_symbol_resource" display_name="lblCategoryResources" />-->
+<!--			<crafting_category name="GasGrillCommon" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding" />-->
+<!--			<crafting_category name="GasGrillAdvanced" icon="ui_game_symbol_knife" display_name="lblCategoryAmmoWeapons" />-->
+<!--		</crafting_category_list>-->
+
+	</append>
+
+</sevenyears>

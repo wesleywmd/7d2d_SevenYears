@@ -1,0 +1,38 @@
+<sevenyears>
+
+	<append xpath="/blocks/block[@name='decoHandTruck']">
+		<property name="CanPickup" value="true"/>
+		<property name="EconomicValue" value="100"/>
+		<property name="Stacknumber" value="1"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='hayBaleSquare']">
+		<property name="CanPickup" value="true"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='decoPumpkinJackOLantern']">
+		<property name="CanPickup" value="true"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='decoComputerDeskTopPC']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='decoComputerDeskTopPC']">
+		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+		<drop event="Destroy" name="decoComputerDeskTopPC" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMousePC']">
+		<drop event="Destroy" name="decoComputerMonitorKeyboardMouse" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitorKeyboardMouse']">
+		<drop event="Destroy" name="decoComputerDeskTopPC" count="0"/>
+		<drop event="Destroy" name="decoComputerMonitorKeyboardMouse" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoComputerMonitor']">
+		<drop event="Destroy" name="decoComputerDeskTopPC" count="0"/>
+		<drop event="Destroy" name="decoComputerMonitorKeyboardMouse" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='decoLaptop']">
+		<drop event="Destroy" name="decoComputerDeskTopPC" count="0"/>
+		<drop event="Destroy" name="decoLaptop" count="1"/>
+	</append>
+
+</sevenyears>

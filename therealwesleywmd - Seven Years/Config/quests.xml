@@ -1,0 +1,290 @@
+<sevenyears>
+
+    <!-- remove base game quests -->
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival2']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival3']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival4']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival5']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival6']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival7']"/>
+    <remove xpath="/quests/quest[@id='quest_BasicSurvival8']"/>
+
+    <!-- point first quest reward to newquest line -->
+    <set xpath="/quests/quest[@id='quest_BasicSurvival1']/reward[@id='quest_BasicSurvival2']/@id">quest_SevenYears2</set>
+
+    <insertAfter xpath="/quests/quest[@id='quest_BasicSurvival1']">
+
+        <quest id="quest_SevenYears2" category_key="quest" shareable="false" icon="ui_game_symbol_hammer">
+            <property name="group_name" value="Seven Years - Chapter 1"/>
+            <property name="name" value="Reunite with the Traders"/>
+            <property name="subtitle" value="Reunite with the Traders"/>
+            <property name="description" value="Its been a long time since we have seen you. Almost seven years I think. Look I apologize about your gear. You should have enough resources to make it over here. We can catch up when you get here."/>
+            <property name="offer" value="Dear Weird Fat Friend,\nAs you know the wasteland can be an unforgiving place and from our observations you look like you could use some help. Here’s a little guide to help a newcomer survive.  Think of it as our little initiation. Complete it to our liking and we just might take in a new citizen. The White River Settlement, it’s real and it’s safe.\n\n Good Luck Noah"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="Goto" id="trader" value="5" phase="1">
+                <property name="nav_object" value="go_to_trader" />
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader" />
+                <property name="use_closest" value="true" />
+            </objective>
+
+            <reward type="Exp" value="50"/>
+            <reward type="Quest" id="quest_SevenYears3"/>
+        </quest>
+
+        <quest id="quest_SevenYears3">
+            <property name="group_name" value="Seven Years - Chapter 1"/>
+            <property name="name" value="Locate a trash compactor"/>
+            <property name="subtitle" value="Locate a trash compactor"/>
+            <property name="description" value="Things have changed since you were last here. I can't really explain everything yet. Can never be too safe. First can you do me a favor? Can you find a trash compactor and bring it back?"/>
+            <property name="icon" value="ui_game_symbol_trashcompactor"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer" value="Find a trash compactor"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="FetchKeep" id="trashCompactor" value="1" phase="1"/>
+
+            <objective type="ReturnToNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <reward type="Exp" value="50"/>
+            <reward type="Quest" id="quest_SevenYears4"/>
+        </quest>
+
+        <quest id="quest_SevenYears4">
+            <property name="group_name" value="Seven Years - Chapter 1"/>
+            <property name="name" value="Time to Start Taking Out the Trash"/>
+            <property name="subtitle" value="Time to Start Taking Out the Trash"/>
+            <property name="description" value="Keep the Trash Compactor. Use it to start cleaning up some of the trash around town. You will need tons of paper and plastic as packing materials. Craft a pallet of paper and a pallet of plastic."/>
+            <property name="icon" value="ui_game_symbol_trashcompactor"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer" value="Use a trash compactor"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="BlockPlace" id="trashCompactor" value="1" phase="1"/>
+
+            <objective type="FetchKeep" id="resourcePaper" value="500" phase="2"/>
+            <objective type="Craft" id="palletCompressedCardboard" value="1" phase="2"/>
+
+            <objective type="FetchKeep" id="resourceScrapPolymers" value="500" phase="3"/>
+            <objective type="Craft" id="palletPlastics" value="1" phase="3"/>
+
+            <objective type="ReturnToNPC">
+                <property name="phase" value="4"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="4"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <reward type="Exp" value="50"/>
+            <reward type="Quest" id="quest_SevenYears5"/>
+        </quest>
+
+        <quest id="quest_SevenYears5">
+            <property name="group_name" value="Seven Years - Chapter 1"/>
+            <property name="name" value="Phone Home"/>
+            <property name="subtitle" value="Phone Home"/>
+            <property name="description" value="You know your here on a mission but you don't want to explain risk your security. Before you can ask the trader to barrow the radio, they tell you that your team already radioed them looking for you. They already explained your mission to the traders and they agreed to help. All you have to do is sell things to the trader and they will ship them home for you. Craft 5 paper and 5 plastic pallets to send home."/>
+            <property name="icon" value="ui_game_symbol_trashcompactor"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer" value="Phone Home"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="Craft" id="palletCompressedCardboard" value="5" phase="1"/>
+            <objective type="Craft" id="palletPlastics" value="5" phase="1"/>
+
+            <objective type="ReturnToNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="2"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <reward type="Exp" value="50"/>
+            <reward type="Quest" id="quest_SevenYears6"/>
+        </quest>
+
+        <quest id="quest_SevenYears6">
+            <property name="group_name" value="Seven Years - Chapter 1"/>
+            <property name="name" value="Time to Start Taking Out the Trash"/>
+            <property name="subtitle" value="Time to Start Taking Out the Trash"/>
+            <property name="description" value="Keep the Trash Compactor. Use it to start cleaning up some of the trash around town. You will need tons of paper and plastic as packing materials. Craft a pallet of paper and a pallet of plastic."/>
+            <property name="icon" value="ui_game_symbol_trashcompactor"/>
+            <property name="category_key" value="quest"/>
+            <property name="offer" value="Use a trash compactor"/>
+            <property name="shareable" value="false"/>
+
+            <action type="TrackQuest"/>
+
+            <objective type="FetchKeep" id="resourcePaper" value="500" phase="1"/>
+            <objective type="Craft" id="palletCompressedCardboard" value="1" phase="1"/>
+
+            <objective type="FetchKeep" id="resourceScrapPolymers" value="500" phase="2"/>
+            <objective type="Craft" id="palletPlastics" value="1" phase="2"/>
+
+            <objective type="ReturnToNPC">
+                <property name="phase" value="3"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <objective type="InteractWithNPC">
+                <property name="phase" value="3"/>
+                <property name="nav_object" value="return_to_trader" />
+            </objective>
+
+            <reward type="Exp" value="50"/>
+            <reward type="Quest" id="quest_SevenYears5"/>
+        </quest>
+
+
+    </insertAfter>
+
+
+
+<!--    &lt;!&ndash; Basic Survival 8 - Build a Campfire/> &ndash;&gt;-->
+<!--    <quest id="quest_BasicSurvival8">-->
+<!--        <property name="group_name_key" value="quest_BasicSurvival"/>-->
+<!--        <property name="name_key" value="quest_BasicSurvival8"/>-->
+<!--        <property name="subtitle_key" value="quest_BasicSurvival8_subtitle"/>-->
+<!--        <property name="description_key" value="quest_BasicSurvival8_description"/>-->
+<!--        <property name="icon" value="ui_game_symbol_campfire"/>-->
+<!--        <property name="category_key" value="quest"/>-->
+<!--        <property name="difficulty" value="veryeasy"/>-->
+<!--        <property name="shareable" value="false"/>-->
+
+<!--        <objective type="FetchKeep" id="resourceRockSmall" value="5" phase="1">-->
+<!--            <modifier type="TrackBlocks">-->
+<!--                <property name="block_index_name" value="quest_stone"/>-->
+<!--                <property name="nav_object" value="quest_resource"/>-->
+<!--                <property name="track_distance" value="20"/>-->
+<!--            </modifier>-->
+<!--        </objective>-->
+<!--        <objective type="Craft" id="campfire" value="1" phase="2"/>-->
+<!--        <objective type="BlockPlace" id="campfire" value="1" phase="2"/>-->
+
+
+<!--        <reward type="Quest" id="quest_whiteRiverCitizen1">-->
+<!--            <property name="chainquest" value="false"/>-->
+<!--        </reward>-->
+<!--        <reward type="SkillPoints" value="4" chainreward="true"/>-->
+<!--    </quest>-->
+
+    <!--
+
+    Tier 1
+
+    1. first quest identical to vanilla.. adds to the "things are not as they seem" warning
+    2. traders apologize for bandits steal all your gear and stuff and not saying something before you crafted a
+       bedroll. you go find the nearest trader.
+    3. the first trader explains that things are different now and we have been gone awhile. they aren't ready to
+       explain everything and want you to help with something first. go find a trash compactor and bring it back to the
+       trader.
+    4. explains what the trash compactor does and gives you the one you found. explains to place it in your base. asks
+       you to craft 1 pallet of plastic and 1 pallet of paper and bring them back.
+    5. you don't want to explain your full mission yet. trust is a 2 way street. but the trader cuts you off and
+       explains your team already radioed them and explained the mission. The traders agreed to help send resources home
+       for you. craft 10 paper and 10 plastic pallets to send home.
+    6. home explained to the traders that clothes are a huge need but the traders explained a weird decease spreading
+       with the zombies. They call it Bloo Plague because if its destinct blue color of the infected. Don't get hit by
+       this zombies or you will become infected too. antibiotics slow its coarse but it will eventually kill you if you
+       don't don't help the traders find a cure. find a washing machine and take it back to the trader.
+    7. trader gives you the washing machine and explains how to craft soap to use. place the washing machine and craft
+       100 soap.
+    8. trader explains that you can loot the bodies of the zombies you kill. collect dirty tshirt and dirty jeans. most
+       zombies drop these when harvested. use soap to craft clean ones in the washing machine.
+    9. trader explains that you can package clothes in packs of 10 with some paper and plastic packaging materials.
+       craft a package of tshirts and a package of jeans. be careful, you will lose mods and dyes if not removed before
+       crafting packages.
+    10. to send things home, the traders are going to pack trailers with pallets. you need to start crafting pallets of
+        packaged clothes. first you need to find some boxes and empty pallets.
+    11. now you can craft a pallet of clothes. craft 5 pallets.
+    12. home radioed in. they had a wind storm last night. They need stacks of wood planks. Time to find a table saw.
+    13. place your table saw at your base and craft 5 stacks of wooden planks.
+    14. trader notices you cutting down trees, asks you to plant the tree seeds. Lets you know they are always looking
+        for tree seeds. craft a package of each tree seed.
+    15. trader explains there is a rumor that they have started to figure out a cure in the next town over and to go see
+        the trader over there of more info.
+
+    Tier 2
+
+    16. you meet the new trader. they explain their doctors are working on a cure and need more samples to work with.
+        They explain the zombies are a carrier of a new plague that is being called Bloo Plague. It is hard to tell
+        which zombies are infected with this plague. All the doctors know for certain is that any zombie that has the
+        plague can pass it to humans with just one hit. However, rekilling a zombie is known to make the plague dormant.
+        It should be ok to cut the zombies open and look for the infection sack. Carefully remove it and bring it back
+        in one piece. Collect 5 bloo plague samples and return to trader.
+    17. the trader gives you an infirmary as a reward. place it in your base and you can now craft medical supplies and
+        research items for curing the bloo plague. craft 3 first aid kits.
+    18. home radioed you again. They want to start working on the food stores for winter. find a grill and coffee maker.
+    19. use your grill to start making smoked meat and grilled meat. grilled meat is a great meal especially paired with
+        a veggie. smoked meat on the other hand, has a longer shelf life. make 50 smoked meat.
+    20. use your coffee maker to make teas and coffees as well as a proficent water pot. boil 30 bottles of water and
+        make a package of water.
+    21. make a smoked meat pallet and water bottle pallet to send home.
+    22. The doctors analysed the samples you sent. They think they are on to something and need more samples. you can
+        use your infirmary to make field sample kits. collect 250 rotten flesh and 10 bloo plague sacks. craft 5 field
+        sample kits.
+    23. you try to send the sample kits but the doctors explain thy need more.. like a lot more. craft a pallet of
+        field samples.
+    24. home is looking for more smoked meat. You need to up your hunting game plus arrows work on zombies too. craft
+        better bow and some stone arrows.
+    25. time to go hunting. kill 5 chicken, 5 rabbit, and 5 deer.
+    26. craft 5 pallets of smoked meat.
+    27. The traders got word of a large amount of zombies headed to one of their main research bases. The need wood
+        spike traps and leather armor to help their forces slow the horde down.
+    28. traders think you need to start farming some animals to help feed home and leather is always valuable. find a
+        doghouse and craft it into rabbit den.
+    29. place your rabbit den and start raising rabbits. raise and slaughter 10 rabbits.
+    30. Find another doghouse and a few bird nests and craft a chicken coop.
+    31. place your chicken coop and start raising chickens. raise and slaughter 10 chickens.
+    32. Demands from both the traders and home are starting to pickup. You ask the trader where you can find more
+        supplies and are pointed to the next trader.
+
+    Tier 3
+
+    ramp up productions, collect more paper plastic and pallets.. get forge and auto bench so you can craft basic
+    vehicles and shipment trailers..
+    home asks for iron armor, ingots, and melee weapons/tools..
+    need to start gathering seeds and farming
+
+    Tier 4
+
+    brass forge, guns, ammo.. home wants guns and ammo.. home need more food and water.. can start canning.. chemistry
+
+    Tier 5
+
+    robotics, explosives, drones.. steel.. advanced productions
+
+    Tier 6 / End game
+
+    sending anything and everything home
+
+
+
+    -->
+
+</sevenyears>

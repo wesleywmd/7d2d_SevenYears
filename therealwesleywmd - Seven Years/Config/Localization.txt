@@ -1,0 +1,7 @@
+Key,File,Type,english
+lblCategorySmelting,UI,Tooltip,Smelting
+
+
+
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sevenyears>
+
+    <setattribute xpath="/lootcontainers/lootcontainer[@name='junk']" name="size">4,1</setattribute>
+
+    <remove xpath="/lootcontainers/lootgroup/item[@name='resourceScrapPolymers']" />
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']" >
+        <item name="plasticFoodContainer" count="2,4" loot_prob_template="med" />
+        <item name="plasticBag" count="2,5" loot_prob_template="med" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']" >
+        <item name="plasticBag" count="2,5" loot_prob_template="med" />
+        <item name="plasticSodaBottle" count="2,3" loot_prob_template="med" />
+        <item name="plasticWaterBottle" count="2,7" loot_prob_template="med" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupScrapUncommon']" >
+        <item name="plasticStorageContainer" count="1,2" loot_prob_template="med" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupSinks01' or @name='groupSinks02']" >
+        <item name="plasticChemicalBottle" count="2,4" loot_prob_template="med" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupMoPowerShelves']" >
+        <item name="plasticBag" count="2,5" loot_prob_template="med" />
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupShamwayProduce01']" >
+        <item name="plasticBag" count="3,8" loot_prob_template="med" />
+        <item name="plasticFoodContainer" count="2,5" loot_prob_template="med" />
+    </append>
+
+</sevenyears>

@@ -1,0 +1,7 @@
+<sevenyears>
+
+	<!-- Increase the probability of tree stump generating when the map generates. -->
+	<set xpath="/worldgeneration/biomes/biome/subbiome/decorations/decoration[@type='block' and @blockname='treeStump']/@prob">0.0008</set>
+	<set xpath="/worldgeneration/biomes/biome/decorations/decoration[@type='block' and @blockname='treeStump']/@prob">0.0008</set>
+
+</sevenyears>

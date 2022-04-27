@@ -1,0 +1,55 @@
+<sevenyears>
+
+<!--    zombieMarlene-->
+<!--    zombiePartyGirl-->
+<!--    zombieNurse-->
+<!--    zombieJoe-->
+<!--    zombieSteve-->
+<!--    zombieTomClark-->
+<!--    zombieBusinessMan-->
+<!--    zombieBurnt-->
+<!--    zombieSpider-->
+
+<!--    zombieBoe-->
+<!--    zombieJanitor-->
+<!--    zombieMoe-->
+<!--    zombieLab-->
+<!--    zombieDarlene-->
+<!--    zombieYo-->
+<!--    zombieUtilityWorker-->
+
+<!--    zombieBiker-->
+<!--    zombieLumberjack-->
+<!--    zombieFemaleFat-->
+<!--    zombieFatHawaiian-->
+<!--    zombieMaleHazmat-->
+<!--    zombieFatCop-->
+
+<!--    zombieSkateboarder-->
+<!--    zombieSoldier-->
+<!--    zombieWightFeral-->
+
+<!--    zombieScreamer-->
+<!--    zombieMutated-->
+<!--    zombieDemolition-->
+<!--    zombieSteveCrawler-->
+
+    <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and @extends='zombieTemplateMale']">
+
+        <property name="TimeStayAfterDeath" value="120"/>
+        <property name="DeadBodyHitPoints" value="200"/>
+        <drop event="Harvest" count="15"   name="resourceBone"      tag="butcherHarvest"/>
+        <drop event="Harvest" count="30"   name="foodRottingFlesh"  tag="butcherHarvest"/>
+        <drop event="Harvest" count="7"    name="resourceAnimalFat" tag="butcherHarvest"/>
+        <drop event="Harvest" count="0,30" name="oldCash"           tag="butcherHarvest" prob="0.7"/>
+        <drop event="Harvest" count="0,30" name="medicalBloodBag"   tag="butcherHarvest" prob="0.05"/>
+
+    </append>
+
+    <append xpath="/entity_classes/entity_class[@name='zombieFemaleFat' or @name='zombieFatHawaiian' or @name='zombieFatCop']">
+
+        <drop event="Harvest" count="15" name="resourceAnimalFat" tag="butcherHarvest"/>
+
+    </append>
+
+</sevenyears>

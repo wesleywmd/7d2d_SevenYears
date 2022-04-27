@@ -1,0 +1,6 @@
+<custom>
+
+    <setattribute xpath="/traders" name="buy_markup">2</setattribute>
+    <setattribute xpath="/traders" name="sell_markdown">1</setattribute>
+
+</custom>

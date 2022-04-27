@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sevenyears>
+
+    <setattribute xpath="/lootcontainers/lootcontainer[@name='wineBarrel']" name="size">6,1</setattribute>
+    <setattribute xpath="/lootcontainers/lootcontainer[@name='cardboardBox']" name="size">7,4</setattribute>
+
+    <append xpath="/lootcontainers">
+
+        <lootcontainer id="700" name="wineBarrelLarge" count="1,2" size="7,4" sound_open="UseActions/open_cooler" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="drinkJarRiverWater" count="1,2"/>
+        </lootcontainer>
+
+    </append>
+
+</sevenyears>

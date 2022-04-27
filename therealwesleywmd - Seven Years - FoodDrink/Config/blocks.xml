@@ -1,0 +1,148 @@
+<sevenyears>
+
+    <remove xpath="/blocks/block[@name='cntGasGrillRandomLootHelper']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='cntGasGrillRandomLootHelper']">
+        <drop event="Destroy" name="gasGrill" count="1"/>
+    </append>
+
+    <remove xpath="/blocks/block[@name='cntCharcoalGrillRandomLootHelper']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='cntCharcoalGrillRandomLootHelper']">
+        <drop event="Destroy" name="charcoalGrill" count="1"/>
+    </append>
+
+    <append xpath="/blocks">
+
+        <block name="gasGrill">
+            <property name="Extends" value="cntGasGrillClosed" param1="LootList"/>
+            <property name="CustomIcon" value="cntGasGrillClosed"/>
+            <property name="DescriptionKey" value="gasGrillDesc"/>
+            <property name="EconomicValue" value="200"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Building,advBuilding"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+            <property name="SortOrder1" value="70i0"/>
+            <drop event="Destroy" name="gasGrill" count="1"/>
+            <property name="Class" value="Workstation"/>
+            <property name="OpenSound" value="open_workbench"/>
+            <property name="CloseSound" value="close_workbench"/>
+            <property name="HeatMapStrength" value="2"/>
+            <property name="HeatMapTime" value="5000"/>
+            <property name="HeatMapFrequency" value="1000"/>
+            <property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+            <property name="WorkstationJournalTip" value="workbenchTip"/>
+            <property class="Workstation">
+                <property name="CraftingAreaRecipes" value="gasGrill"/>
+                <property name="Modules" value="tools,output,fuel,input"/>
+                <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            </property>
+        </block>
+
+        <block name="charcoalGrill">
+            <property name="Extends" value="cntCharcoalGrillClosed" param1="LootList"/>
+            <property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+            <property name="DescriptionKey" value="charcoalGrillDesc"/>
+            <property name="EconomicValue" value="200"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Building,advBuilding"/>
+            <property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+            <property name="SortOrder1" value="70i0"/>
+            <drop event="Destroy" name="gasGrill" count="1"/>
+            <property name="Class" value="Workstation"/>
+            <property name="OpenSound" value="open_workbench"/>
+            <property name="CloseSound" value="close_workbench"/>
+            <property name="HeatMapStrength" value="2"/>
+            <property name="HeatMapTime" value="5000"/>
+            <property name="HeatMapFrequency" value="1000"/>
+            <property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+            <property name="WorkstationJournalTip" value="workbenchTip"/>
+            <property class="Workstation">
+                <property name="CraftingAreaRecipes" value="gasGrill"/>
+                <property name="Modules" value="tools,output,fuel,input"/>
+                <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            </property>
+        </block>
+
+
+<!--        <block name="stove">-->
+<!--            <property name="Extends" value="forge"/>-->
+<!--            <property name="CustomIcon" value="forge"/>-->
+<!--            <property name="CustomIconTint" value="e0b191"/>-->
+<!--            <property name="TintColor" value="e0b191"/>-->
+<!--            <property name="HeatMapStrength" value="6"/>-->
+<!--            <property name="HeatMapTime" value="5000"/>-->
+<!--            <property name="HeatMapFrequency" value="1000"/>-->
+<!--            <property class="Workstation">-->
+<!--                <property name="CraftingAreaRecipes" value="forgeApocalypse"/>-->
+<!--                <property name="Modules" value="tools,output,fuel,material_input"/>-->
+<!--                <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>-->
+<!--            </property>-->
+<!--            <property name="DescriptionKey" value="forgeDesc"/>-->
+<!--            <property name="EconomicValue" value="1000"/>-->
+<!--        </block>-->
+<!--        <block name="microwave">-->
+<!--            <property name="Extends" value="forge"/>-->
+<!--            <property name="CustomIcon" value="forge"/>-->
+<!--            <property name="CustomIconTint" value="e0b191"/>-->
+<!--            <property name="TintColor" value="e0b191"/>-->
+<!--            <property name="HeatMapStrength" value="6"/>-->
+<!--            <property name="HeatMapTime" value="5000"/>-->
+<!--            <property name="HeatMapFrequency" value="1000"/>-->
+<!--            <property class="Workstation">-->
+<!--                <property name="CraftingAreaRecipes" value="forgeApocalypse"/>-->
+<!--                <property name="Modules" value="tools,output,fuel,material_input"/>-->
+<!--                <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>-->
+<!--            </property>-->
+<!--            <property name="DescriptionKey" value="forgeDesc"/>-->
+<!--            <property name="EconomicValue" value="1000"/>-->
+<!--        </block>-->
+<!--        <block name="coffeeMaker">-->
+<!--            <property name="Extends" value="forge"/>-->
+<!--            <property name="CustomIcon" value="forge"/>-->
+<!--            <property name="CustomIconTint" value="e0b191"/>-->
+<!--            <property name="TintColor" value="e0b191"/>-->
+<!--            <property name="HeatMapStrength" value="6"/>-->
+<!--            <property name="HeatMapTime" value="5000"/>-->
+<!--            <property name="HeatMapFrequency" value="1000"/>-->
+<!--            <property class="Workstation">-->
+<!--                <property name="CraftingAreaRecipes" value="forgeApocalypse"/>-->
+<!--                <property name="Modules" value="tools,output,fuel,material_input"/>-->
+<!--                <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>-->
+<!--            </property>-->
+<!--            <property name="DescriptionKey" value="forgeDesc"/>-->
+<!--            <property name="EconomicValue" value="1000"/>-->
+<!--        </block>-->
+<!--        <block name="sodaMachine">-->
+<!--            <property name="Extends" value="forge"/>-->
+<!--            <property name="CustomIcon" value="forge"/>-->
+<!--            <property name="CustomIconTint" value="e0b191"/>-->
+<!--            <property name="TintColor" value="e0b191"/>-->
+<!--            <property name="HeatMapStrength" value="6"/>-->
+<!--            <property name="HeatMapTime" value="5000"/>-->
+<!--            <property name="HeatMapFrequency" value="1000"/>-->
+<!--            <property class="Workstation">-->
+<!--                <property name="CraftingAreaRecipes" value="forgeApocalypse"/>-->
+<!--                <property name="Modules" value="tools,output,fuel,material_input"/>-->
+<!--                <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>-->
+<!--            </property>-->
+<!--            <property name="DescriptionKey" value="forgeDesc"/>-->
+<!--            <property name="EconomicValue" value="1000"/>-->
+<!--        </block>-->
+<!--        <block name="coffeeMakerIndustrial">-->
+<!--            <property name="Extends" value="forge"/>-->
+<!--            <property name="CustomIcon" value="forge"/>-->
+<!--            <property name="CustomIconTint" value="e0b191"/>-->
+<!--            <property name="TintColor" value="e0b191"/>-->
+<!--            <property name="HeatMapStrength" value="6"/>-->
+<!--            <property name="HeatMapTime" value="5000"/>-->
+<!--            <property name="HeatMapFrequency" value="1000"/>-->
+<!--            <property class="Workstation">-->
+<!--                <property name="CraftingAreaRecipes" value="forgeApocalypse"/>-->
+<!--                <property name="Modules" value="tools,output,fuel,material_input"/>-->
+<!--                <property name="InputMaterials" value="iron,brass,lead,glass,stone,clay"/>-->
+<!--            </property>-->
+<!--            <property name="DescriptionKey" value="forgeDesc"/>-->
+<!--            <property name="EconomicValue" value="1000"/>-->
+<!--        </block>-->
+    </append>
+
+</sevenyears>

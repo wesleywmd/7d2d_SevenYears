@@ -1,0 +1,52 @@
+<sevenyears>
+
+	<append xpath="/xui/ruleset[@name='default']" >
+
+		<window_group name="workstation_rabbitden" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_chickencoop" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_feedMixer" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_reptileTerrarium" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+		<window_group name="workstation_pigrun" controller="XUiC_WorkstationWindowGroup"
+					  open_backpack_on_open="true" close_compass_on_open="true">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowOutput"/>
+			<window name="windowNonPagingHeader"/>
+		</window_group>
+
+	</append>
+
+</sevenyears>

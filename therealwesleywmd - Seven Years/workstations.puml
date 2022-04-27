@@ -1,0 +1,89 @@
+@startuml
+
+    note "Status Key: \n Green -> Complete \n Yellow -> In Progress \n Orange -> Not Started" as N1
+
+    state General #yellow {
+        state Backpack #yellow
+    }
+
+    state Kitchen #yellow {
+        state Campfire #yellow
+        Campfire --> Grill #yellow
+        Campfire --> CoffeeMachine #orange
+        Grill --> Stove #orange
+        Grill --> Microwave #orange
+        CoffeeMachine --> SodaMachine #orange
+        CoffeeMachine --> IndustrialCoffeeMachine #orange
+    }
+
+    state Internet #yellow {
+        state ComputerHome #yellow
+        ComputerHome -> ComputerTraders #yellow
+        ComputerTraders -> ComputerBlackMarket #yellow
+    }
+
+    state Tools #yellow {
+        state TrashCompactor #yellow
+        TrashCompactor --> TableSaw #orange
+        TrashCompactor --> WashingMachine #orange
+        TableSaw --> FurnitureWorkbench #orange
+        WashingMachine --> CementMixer #yellow
+    }
+
+    state Farming #yellow {
+        state Beehive #yellow
+        Beehive --> CompostMixer #yellow
+        Beehive --> FarmersWorkbench #yellow
+        FarmersWorkbench --> Greenhouse #yellow
+        CompostMixer --> Greenhouse #yellow
+
+    }
+
+    state Husbandry #yellow {
+        state RabbitDen #yellow
+        RabbitDen --> ChickenCoop #yellow
+        RabbitDen --> FeedMixer #yellow
+        FeedMixer --> PigRun #yellow
+        ChickenCoop --> Terrarium #yellow
+    }
+
+    state Forging #yellow {
+        state Forge #yellow
+        Forge --> ApocalypseForge #yellow
+        Forge --> Kiln #yellow
+        ApocalypseForge --> SteelForge #yellow
+        Kiln --> SteelForge
+    }
+
+    state Crafting #yellow {
+        state Workbench #yellow
+        state Infirmary #orange
+        Workbench --> MechanicsWorkbench #orange
+        Infirmary --> MechanicsWorkbench #orange
+        MechanicsWorkbench --> RoboticsWorkbench #orange
+    }
+
+    state AdvancedCrafting #yellow {
+        state ChemistryStation #yellow
+        ChemistryStation --> AmmunitionWorkbench #orange
+        AmmunitionWorkbench --> ExplosivesChemistryStation #orange
+    }
+
+    state Zymology #orange {
+        state WineBarrel #orange
+        WineBarrel --> MashTun #orange
+        WineBarrel --> Still #orange
+    }
+
+    General --> Kitchen
+    General --> Tools
+    General --> Crafting
+    General -left> Internet
+    Kitchen --> Farming
+    Kitchen --> Husbandry
+    Kitchen --> Zymology
+    Tools --> Forging
+    Crafting --> AdvancedCrafting
+
+
+@enduml

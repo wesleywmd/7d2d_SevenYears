@@ -1,0 +1,300 @@
+<sevenyears>
+<!--
+	*******************
+	*  Empty Pallets  *
+	*******************
+-->
+	<append xpath="/blocks/block[@name='palletEmpty']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="resourceWood" count="0" />
+		<drop event="Destroy" name="palletEmpty" count="1" />
+	</append>
+
+	<append xpath="/blocks/block[@name='palletEmptyStack']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Harvest" name="resourceWood" count="0" tag="allHarvest" />
+		<drop event="Destroy" name="resourceWood" count="0" />
+		<drop event="Destroy" name="palletEmpty" count="5" />
+	</append>
+<!--
+	******************
+	*  Wood Pallets  *
+	******************
+-->
+	<remove xpath="/blocks/block[@name='OSBWoodStack']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='OSBWoodStack']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="OSBWoodStack" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='plywoodStack']">
+		<drop event="Destroy" name="OSBWoodStack" count="0"/>
+		<drop event="Destroy" name="plywoodStack" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='woodPlanksStack']">
+		<drop event="Harvest" name="resourceWood" count="500" tag="allHarvest"/>
+		<drop event="Destroy" name="OSBWoodStack" count="0"/>
+	</append>
+
+<!--
+	***********************
+	*  Blue Tarp Pallets  *
+	***********************
+-->
+	<remove xpath="/blocks/block[@name='palletBlueTarpBase' or @name='palletBlueTarpTile']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletBlueTarpBase']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Harvest" name="resourceCobblestones" count="500" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1" />
+	</append>
+	<append xpath="/blocks/block[@name='palletBlueTarpTile']">
+		<drop event="Destroy" name="palletEmpty" count="0" />
+	</append>
+
+<!--
+	******************************
+	*  Compressed Paper Pallets  *
+	******************************
+-->
+	<remove xpath="/blocks/block[@name='palletCompressedCardboard']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletCompressedCardboard']">
+		<property name="Tags" value="noHarvestExp"/>
+		<property name="Group" value="Decor/Miscellaneous,TC_Pallets"/>
+		<drop event="Harvest" name="resourcePaper" count="500" tag="allHarvest"/>
+	</append>
+
+<!--
+	**************************
+	*  Crushed Cans Pallets  *
+	**************************
+-->
+	<remove xpath="/blocks/block[@name='palletCans']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletCans']">
+		<property name="Tags" value="noHarvestExp"/>
+		<property name="Group" value="Decor/Miscellaneous,TC_Pallets"/>
+		<drop event="Harvest" name="resourceScrapIron" count="500" tag="allHarvest"/>
+	</append>
+
+<!--
+	*****************************
+	*  Small Brown Box Pallets  *
+	*****************************
+-->
+	<remove xpath="/blocks/block[@name='palletBrownBoxesBase' or @name='palletBrownBoxesTile' or @name='palletBrownBoxesTop' or @name='palletBrownBoxesLoose']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletBrownBoxesBase']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="palletBrownBoxesLoose" count="4"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBrownBoxesTile']">
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBrownBoxesTop']">
+		<drop event="Destroy" name="palletBrownBoxesLoose" count="2"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBrownBoxesLoose']">
+		<drop event="Destroy" name="palletBrownBoxesLoose" count="1"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+
+<!--
+	**************************
+	*  Empty Carboard Boxes  *
+	**************************
+-->
+	<remove xpath="/blocks/block[@name='cntGarageStorage']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntGarageStorage']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="cntCardboardBox" count="1"/>
+	</append>
+
+<!--
+	***********************
+	*  Metal Pipe Stacks  *
+	***********************
+-->
+	<remove xpath="/blocks/block[@name='metalPipeStack' or @name='metalPipeStackLoose']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='metalPipeStack']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Harvest" name="resourceMetalPipe" count="250" tag="allHarvest"/>
+	</append>
+	<append xpath="/blocks/block[@name='metalPipeStackLoose']">
+		<drop event="Harvest" name="resourceMetalPipe" count="125" tag="allHarvest"/>
+	</append>
+
+<!--
+	*******************
+	*  Brick Pallets  *
+	*******************
+-->
+	<remove xpath="/blocks/block[@name='palletBricksBase' or @name='palletBricksTile' or @name='palletBricksPartial1' or @name='palletBricksTop' or @name='palletBricksPartial2' or @name='palletBricksLoose']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletBricksBase']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Harvest" name="resourceRockSmall" count="500" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBricksTile']">
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBricksPartial1']">
+		<drop event="Harvest" name="resourceRockSmall" count="250" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBricksTop']">
+		<drop event="Harvest" name="resourceRockSmall" count="250" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBricksPartial2']">
+		<drop event="Harvest" name="resourceRockSmall" count="125" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletBricksLoose']">
+		<drop event="Harvest" name="resourceRockSmall" count="125" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+
+<!--
+	************************
+	*  Cement Bag Pallets  *
+	************************
+-->
+	<remove xpath="/blocks/block[@name='palletWhiteBagsBase' or @name='palletWhiteBagsTile' or @name='palletWhiteBagsPartial1' or @name='palletWhiteBagsTop' or @name='palletWhiteBagsPartial2' or @name='palletWhiteBagsLoose']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='palletWhiteBagsBase']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Harvest" name="resourceCement" count="500" tag="allHarvest"/>
+		<drop event="Harvest" name="resourcePaper" count="8" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletWhiteBagsTile']">
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletWhiteBagsPartial1']">
+		<drop event="Harvest" name="resourceCement" count="250" tag="allHarvest"/>
+		<drop event="Harvest" name="resourcePaper" count="4" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletWhiteBagsTop']">
+		<drop event="Harvest" name="resourceCement" count="250" tag="allHarvest"/>
+		<drop event="Harvest" name="resourcePaper" count="4" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletWhiteBagsPartial2']">
+		<drop event="Harvest" name="resourceCement" count="125" tag="allHarvest"/>
+		<drop event="Harvest" name="resourcePaper" count="2" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='palletWhiteBagsLoose']">
+		<drop event="Harvest" name="resourceCement" count="125" tag="allHarvest"/>
+		<drop event="Harvest" name="resourcePaper" count="2" tag="allHarvest"/>
+		<drop event="Destroy" name="palletEmpty" count="0"/>
+	</append>
+
+<!--
+	****************************
+	*  Plastic Barrel pallets  *
+	****************************
+-->
+	<remove xpath="/blocks/block[@name='cntBarrelPlasticSingle00']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticSingle00']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="cntBarrelPlasticSingle00" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadA']">
+		<drop event="Destroy" name="cntBarrelPlasticSingle00" count="4"/>
+		<drop event="Destroy" name="palletEmpty" count="1"/>
+		<property name="LootList" value="wineBarrelLarge"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBarrelPlasticQuadB']">
+		<drop event="Destroy" name="cntBarrelPlasticSingle00" count="4"/>
+		<property name="LootList" value="wineBarrelLarge"/>
+	</append>
+
+<!--
+	*******************
+	*  Other pallets  *
+	*******************
+-->
+	<remove xpath="/blocks/block[@name='dryWallStack']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='dryWallStack']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="dryWallStack" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='bricksStack']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='bricksStack']">
+		<property name="Tags" value="noHarvestExp"/>
+		<drop event="Destroy" name="bricksStack" count="1"/>
+	</append>
+
+	<append xpath="/blocks">
+
+		<block name="packedPalletMaster">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property name="CustomIconTint" value="EDCCA2"/>
+			<property name="TintColor" value="EDCCA2"/>
+			<property name="Stacknumber" value="1"/>
+		</block>
+
+		<block name="decoHandTruckPallet">
+			<property name="Extends" value="packedPalletMaster"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<property name="EconomicValue" value="500"/>
+			<drop event="Destroy" name="decoHandTruck" count="4"/>
+		</block>
+
+		<block name="oldChairPallet">
+			<property name="Extends" value="packedPalletMaster"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<drop event="Destroy" name="oldChair1VariantHelper" count="12"/>
+		</block>
+
+		<block name="officeChairPallet">
+			<property name="Extends" value="packedPalletMaster"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<drop event="Destroy" name="officeChair01VariantHelper" count="12"/>
+		</block>
+
+		<block name="woodChairPallet">
+			<property name="Extends" value="packedPalletMaster"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<drop event="Destroy" name="woodChair1" count="12"/>
+		</block>
+
+		<block name="barracksChairPallet">
+			<property name="Extends" value="packedPalletMaster"/>
+			<property name="CustomIcon" value="palletBrownBoxesBase"/>
+			<drop event="Destroy" name="barracksChair" count="12"/>
+		</block>
+
+		<block name="palletPlastics">
+			<property name="Extends" value="palletCans"/>
+			<property name="CustomIcon" value="palletCans"/>
+			<property name="CustomIconTint" value="458cff"/>
+			<property name="TintColor" value="458cff"/>
+			<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="0"/>
+			<drop event="Destroy" name="resourceScrapPolymers" count="500"/>
+		</block>
+
+		<block name="palletBrass">
+			<property name="Extends" value="palletCans"/>
+			<property name="CustomIcon" value="palletCans"/>
+			<property name="CustomIconTint" value="e0b191"/>
+			<property name="TintColor" value="e0b191"/>
+			<drop event="Destroy" name="resourceScrapIron" count="0"/>
+			<drop event="Destroy" name="resourceScrapBrass" count="500"/>
+		</block>
+
+		<block name="palletLead">
+			<property name="Extends" value="palletCans"/>
+			<property name="CustomIcon" value="palletCans"/>
+			<property name="CustomIconTint" value="727882"/>
+			<property name="TintColor" value="727882"/>
+			<drop event="Destroy" name="resourceScrapIron" count="0"/>
+			<drop event="Destroy" name="resourceScrapLead" count="500"/>
+		</block>
+
+	</append>
+
+</sevenyears>

@@ -1,0 +1,71 @@
+<sevenyears>
+
+	<append xpath="/recipes">
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="5" craft_time="4" craft_exp_gain="1">
+			<ingredient name="plasticWaterBottle" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="2" craft_time="2" craft_exp_gain="1">
+			<ingredient name="plasticBag" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="7" craft_time="3" craft_exp_gain="3">
+			<ingredient name="plasticSodaBottle" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="5" craft_time="4" craft_exp_gain="2">
+			<ingredient name="plasticFoodContainer" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="6" craft_exp_gain="3">
+			<ingredient name="plasticStorageContainer" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="7" craft_time="6" craft_exp_gain="2">
+			<ingredient name="plasticChemicalBottle" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="4" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntTrashPile01" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntBruteStyleTrashCanFull" count="1"/>
+		</recipe>
+
+		<recipe name="resourcePaper" craft_area="trashcompactor" count="4" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntTrashPile09" count="1"/>
+		</recipe>
+
+		<recipe name="resourcePaper" craft_area="trashcompactor" count="8" craft_time="5" craft_exp_gain="1">
+			<ingredient name="palletBrownBoxesLoose" count="1"/>
+		</recipe>
+
+		<recipe name="resourcePaper" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntCardboardBox" count="1"/>
+		</recipe>
+
+		<recipe name="palletCans" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="resourceScrapIron" count="500"/>
+		</recipe>
+
+		<recipe name="palletPlastics" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="resourceScrapPolymers" count="500"/>
+		</recipe>
+
+		<recipe name="palletBrass" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="resourceScrapBrass" count="500"/>
+		</recipe>
+
+		<recipe name="palletLead" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="resourceScrapLead" count="500"/>
+		</recipe>
+
+		<recipe name="palletCompressedCardboard" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="resourcePaper" count="500"/>
+		</recipe>
+
+	</append>
+
+</sevenyears>

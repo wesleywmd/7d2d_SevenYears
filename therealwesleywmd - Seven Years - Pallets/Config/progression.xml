@@ -1,0 +1,13 @@
+<sevenyears>
+
+    <append xpath="/progression/attributes/attribute[@name='attPerception']">
+
+        <effect_group>
+            <triggered_effect trigger="onSelfDamagedBlock" action="AddBuff" buff="buffNoHarvestExp">
+                <requirement name="TriggerHasTags" tags="noHarvestExp"/>
+            </triggered_effect>
+        </effect_group>
+
+    </append>
+
+</sevenyears>
