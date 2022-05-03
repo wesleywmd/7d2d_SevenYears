@@ -58,6 +58,7 @@
 	<remove xpath="/blocks/block[@name='palletCompressedCardboard']/drop[not(@event='Fall')]"/>
 	<append xpath="/blocks/block[@name='palletCompressedCardboard']">
 		<property name="Tags" value="noHarvestExp"/>
+		<property name="EconomicValue" value="550"/>
 		<property name="Group" value="Decor/Miscellaneous,TC_Pallets"/>
 		<drop event="Harvest" name="resourcePaper" count="500" tag="allHarvest"/>
 	</append>
@@ -272,9 +273,10 @@
 			<property name="CustomIcon" value="palletCans"/>
 			<property name="CustomIconTint" value="458cff"/>
 			<property name="TintColor" value="458cff"/>
+			<property name="EconomicValue" value="550"/>
 			<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
 			<drop event="Destroy" name="resourceScrapIron" count="0"/>
-			<drop event="Destroy" name="resourceScrapPolymers" count="500"/>
+			<drop event="Harvest" name="resourceScrapPolymers" count="500" tag="allHarvest"/>
 		</block>
 
 		<block name="palletBrass">
@@ -283,7 +285,7 @@
 			<property name="CustomIconTint" value="e0b191"/>
 			<property name="TintColor" value="e0b191"/>
 			<drop event="Destroy" name="resourceScrapIron" count="0"/>
-			<drop event="Destroy" name="resourceScrapBrass" count="500"/>
+			<drop event="Harvest" name="resourceScrapBrass" count="500" tag="allHarvest"/>
 		</block>
 
 		<block name="palletLead">
@@ -292,7 +294,7 @@
 			<property name="CustomIconTint" value="727882"/>
 			<property name="TintColor" value="727882"/>
 			<drop event="Destroy" name="resourceScrapIron" count="0"/>
-			<drop event="Destroy" name="resourceScrapLead" count="500"/>
+			<drop event="Harvest" name="resourceScrapLead" count="500" tag="allHarvest"/>
 		</block>
 
 	</append>
