@@ -5,10 +5,9 @@
         <drop event="Destroy" name="reptileTerrarium" count="1"/>
     </append>
 
-    <remove xpath="/blocks/block[@name='decoClassicDogHouse']/drop[not(@event='Fall')]"/>
     <append xpath="/blocks/block[@name='decoClassicDogHouse']">
         <drop event="Destroy" name="resourceWood" count="0"/>
-        <drop event="Destroy" name="chickecoop" count="1"/>
+        <drop event="Destroy" name="chickencoop" count="1"/>
     </append>
 
     <remove xpath="/blocks/block[@name='decoLargePetCage']/drop[not(@event='Fall')]"/>
