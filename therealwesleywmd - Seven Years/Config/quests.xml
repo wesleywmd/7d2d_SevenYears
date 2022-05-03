@@ -80,22 +80,16 @@
             <objective type="BlockPlace" id="trashCompactor" value="1" phase="1"/>
 
             <objective type="FetchKeep" id="resourcePaper" value="500" phase="2"/>
-            <objective type="Craft" id="palletCompressedCardboard" value="1" phase="2"/>
 
-            <objective type="FetchKeep" id="resourceScrapPolymers" value="500" phase="3"/>
-            <objective type="Craft" id="palletPlastics" value="1" phase="3"/>
+            <objective type="FetchKeep" id="palletCompressedCardboard" value="1" phase="3"/>
 
-            <objective type="ReturnToNPC">
-                <property name="phase" value="4"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
+            <objective type="FetchKeep" id="palletCompressedCardboard" value="1" phase="4"/>
+            <objective type="FetchKeep" id="resourceScrapPolymers" value="500" phase="4"/>
 
-            <objective type="InteractWithNPC">
-                <property name="phase" value="4"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
+            <objective type="FetchKeep" id="palletCompressedCardboard" value="1" phase="5"/>
+            <objective type="FetchKeep" id="palletPlastics" value="1" phase="5"/>
 
-            <reward type="Exp" value="50"/>
+            <reward type="Exp" value="5000"/>
             <reward type="Quest" id="quest_SevenYears5"/>
         </quest>
 
@@ -111,50 +105,26 @@
 
             <action type="TrackQuest"/>
 
-            <objective type="Craft" id="palletCompressedCardboard" value="5" phase="1"/>
-            <objective type="Craft" id="palletPlastics" value="5" phase="1"/>
+            <objective type="FetchKeep" id="palletCompressedCardboard" value="5" phase="1"/>
+            <objective type="FetchKeep" id="palletPlastics" value="5" phase="1"/>
 
-            <objective type="ReturnToNPC">
-                <property name="phase" value="2"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
-
-            <objective type="InteractWithNPC">
-                <property name="phase" value="2"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
-
-            <reward type="Exp" value="50"/>
+            <reward type="Exp" value="5000"/>
             <reward type="Quest" id="quest_SevenYears6"/>
         </quest>
 
         <quest id="quest_SevenYears6">
             <property name="group_name" value="Seven Years - Chapter 1"/>
-            <property name="name" value="Time to Start Taking Out the Trash"/>
-            <property name="subtitle" value="Time to Start Taking Out the Trash"/>
-            <property name="description" value="Keep the Trash Compactor. Use it to start cleaning up some of the trash around town. You will need tons of paper and plastic as packing materials. Craft a pallet of paper and a pallet of plastic."/>
+            <property name="name" value="Bloo Plague"/>
+            <property name="subtitle" value="Bloo Plague"/>
+            <property name="description" value="home explained to the traders that clothes are a huge need but the traders explained a weird decease spreading with the zombies. They call it Bloo Plague because if its destinct blue color of the infected. Don't get hit by this zombies or you will become infected too. antibiotics slow its coarse but it will eventually kill you if you don't don't help the traders find a cure. find a washing machine and take it back to the trader."/>
             <property name="icon" value="ui_game_symbol_trashcompactor"/>
             <property name="category_key" value="quest"/>
-            <property name="offer" value="Use a trash compactor"/>
+            <property name="offer" value="Bloo Plague"/>
             <property name="shareable" value="false"/>
 
             <action type="TrackQuest"/>
 
-            <objective type="FetchKeep" id="resourcePaper" value="500" phase="1"/>
-            <objective type="Craft" id="palletCompressedCardboard" value="1" phase="1"/>
-
-            <objective type="FetchKeep" id="resourceScrapPolymers" value="500" phase="2"/>
-            <objective type="Craft" id="palletPlastics" value="1" phase="2"/>
-
-            <objective type="ReturnToNPC">
-                <property name="phase" value="3"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
-
-            <objective type="InteractWithNPC">
-                <property name="phase" value="3"/>
-                <property name="nav_object" value="return_to_trader" />
-            </objective>
+<!--            find a washing machine-->
 
             <reward type="Exp" value="50"/>
             <reward type="Quest" id="quest_SevenYears5"/>
