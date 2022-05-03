@@ -19,7 +19,27 @@ This overhaul was written without any other mods or molets installed. Currently,
 
 # Changelog
 
-- v0.2 - Initial Beta Release - 4/26/2022
+## v0.3 Release - 5/3/2022
+
+### New Things
+
+- Added Appliance Parts as an item. These can be broken down into various resources.  
+- Added recipes to Trash Compactor to breakdown small appliances in Appliance Parts.
+- Zombies now drop new dirty laundry items similar to what they are wearing.
+- Added Wood Ash, Lye, and Laundry Soap as items with recipes for each.
+- Added Washing Machine workstation. These are used to clean and package apparel items for shipment home. Use laundry soap and dirty clothes to clean them. Add a little plastic packaging to package them up for storage or shipment.
+- Added new blocks to storage harvesting including: Coolers (all colors), Trash Cans (all types), Bird Nests, Bags (all types) and Luggage
+
+### Fixes
+
+- Adjusted plastic trash items conversion in a trash compactor to product slightly more plastic.
+- Fix Dog House harvesting issues and remove xpath warnings.
+- Balance economy values and harvesting rules for paper and metal pallets. 
+- Fix bug where negative experience was being applied after a player leveled motherlode perk and harvesting a pallet.
+- Toasters can now be picked up similar to base game chairs. 
+- Update to questline adding new missions and adjusting beginning ones. Still pre-chapter one.
+
+## v0.2 Initial Beta Release - 4/26/2022
 
 # Contact Information
 
