@@ -161,4 +161,80 @@
 		<drop event="Destroy" name="cntDumpster" count="1"/>
 	</append>
 
+	<remove xpath="/blocks/block[@name='cntCoolerRandomLootHelper']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntCoolerOpen']">
+		<drop event="Destroy" name="cntCoolerClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntCoolerOpenRed' or @name='cntCoolerClosedRed']">
+		<drop event="Destroy" name="cntCoolerClosed" count="0"/>
+		<drop event="Destroy" name="cntCoolerClosedRed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntCoolerOpenGreen' or @name='cntCoolerClosedGreen']">
+		<drop event="Destroy" name="cntCoolerClosed" count="0"/>
+		<drop event="Destroy" name="cntCoolerClosedGreen" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntBirdnest']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntBirdnest']">
+		<drop event="Destroy" name="cntBirdnest" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntBackpack01']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntBackpack01']">
+		<drop event="Destroy" name="cntBackPack01" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntFetchQuestSatchel']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntBackpack03']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+		<drop event="Destroy" name="cntBackpack03" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntDuffle01']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+		<drop event="Destroy" name="cntDuffle01" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntSportsBag01']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+		<drop event="Destroy" name="cntSportsBag01" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntSportsBag02']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+		<drop event="Destroy" name="cntSportsBag02" count="0"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntPurse01']">
+		<drop event="Destroy" name="cntBackPack01" count="0"/>
+		<drop event="Destroy" name="cntSportsBag02" count="0"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntSuitcase']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntSuitcase']">
+		<drop event="Destroy" name="cntSuitcase" count="1"/>
+	</append>
+
+	<remove xpath="/blocks/block[@name='cntLuggageMediumOpen']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntLuggageMediumOpen']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggageBigOpen']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="0"/>
+		<drop event="Destroy" name="cntLuggageBigClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggagePileAOpen']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="0"/>
+		<drop event="Destroy" name="cntLuggagePileAClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggagePileAClosed']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="0"/>
+		<drop event="Destroy" name="cntLuggagePileAClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggagePileBOpen']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="0"/>
+		<drop event="Destroy" name="cntLuggagePileBClosed" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='cntLuggagePileBClosed']">
+		<drop event="Destroy" name="cntLuggageMediumClosed" count="0"/>
+		<drop event="Destroy" name="cntLuggagePileBClosed" count="1"/>
+	</append>
+
 </sevenyears>
