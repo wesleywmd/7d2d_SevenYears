@@ -1,13 +1,18 @@
 <sevenyears>
 
     <append xpath="/progression/attributes/attribute[@name='attPerception']">
-
         <effect_group>
             <triggered_effect trigger="onSelfDamagedBlock" action="AddBuff" buff="buffNoHarvestExp">
                 <requirement name="TriggerHasTags" tags="noHarvestExp"/>
             </triggered_effect>
+            <triggered_effect trigger="onSelfDestroyedBlock" action="AddBuff" buff="buffNoHarvestExp">
+                <requirement name="TriggerHasTags" tags="noHarvestExp"/>
+            </triggered_effect>
         </effect_group>
+    </append>
 
+    <append xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain']">
+        <requirement name="NotHasBuff" buff="buffNoHarvestExp"/>
     </append>
 
 </sevenyears>
