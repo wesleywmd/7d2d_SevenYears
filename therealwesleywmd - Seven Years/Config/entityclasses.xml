@@ -1,54 +1,235 @@
 <sevenyears>
 
-<!--    zombieMarlene-->
-<!--    zombiePartyGirl-->
-<!--    zombieNurse-->
-<!--    zombieJoe-->
-<!--    zombieSteve-->
-<!--    zombieTomClark-->
-<!--    zombieBusinessMan-->
-<!--    zombieBurnt-->
-<!--    zombieSpider-->
-
-<!--    zombieBoe-->
-<!--    zombieJanitor-->
-<!--    zombieMoe-->
-<!--    zombieLab-->
-<!--    zombieDarlene-->
-<!--    zombieYo-->
-<!--    zombieUtilityWorker-->
-
-<!--    zombieBiker-->
-<!--    zombieLumberjack-->
-<!--    zombieFemaleFat-->
-<!--    zombieFatHawaiian-->
-<!--    zombieMaleHazmat-->
-<!--    zombieFatCop-->
-
-<!--    zombieSkateboarder-->
-<!--    zombieSoldier-->
-<!--    zombieWightFeral-->
-
-<!--    zombieScreamer-->
-<!--    zombieMutated-->
-<!--    zombieDemolition-->
-<!--    zombieSteveCrawler-->
-
     <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and @extends='zombieTemplateMale']">
 
         <property name="TimeStayAfterDeath" value="120"/>
         <property name="DeadBodyHitPoints" value="200"/>
-        <drop event="Harvest" count="15"   name="resourceBone"      tag="butcherHarvest"/>
-        <drop event="Harvest" count="30"   name="foodRottingFlesh"  tag="butcherHarvest"/>
-        <drop event="Harvest" count="7"    name="resourceAnimalFat" tag="butcherHarvest"/>
-        <drop event="Harvest" count="0,30" name="oldCash"           tag="butcherHarvest" prob="0.7"/>
-        <drop event="Harvest" count="0,30" name="medicalBloodBag"   tag="butcherHarvest" prob="0.05"/>
 
     </append>
 
-    <append xpath="/entity_classes/entity_class[@name='zombieFemaleFat' or @name='zombieFatHawaiian' or @name='zombieFatCop']">
+    <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and @extends='zombieTemplateMale']">
 
-        <drop event="Harvest" count="15" name="resourceAnimalFat" tag="butcherHarvest"/>
+        <drop event="Harvest" count="7" name="resourceBone" tag="allHarvest"/>
+        <drop event="Harvest" count="8" name="resourceBone" tag="butcherHarvest"/>
+        <drop event="Harvest" count="15" name="foodRottingFlesh" tag="allHarvest"/>
+        <drop event="Harvest" count="15" name="foodRottingFlesh" tag="butcherHarvest"/>
+        <drop event="Harvest" count="7" name="resourceAnimalFat" tag="butcherHarvest"/>
+        <drop event="Harvest" count="0,40" name="oldCash" tag="allHarvest" prob="0.7"/>
+        <drop event="Harvest" count="1" name="medicalBloodBag" tag="allHarvest" prob="0.05"/>
+
+    </append>
+
+    <append xpath="/entity_classes/entity_class[starts-with(@name, 'zombie') and @extends='zombieBoe']">
+
+        <drop event="Harvest" count="7" name="resourceBone" tag="allHarvest"/>
+        <drop event="Harvest" count="8" name="resourceBone" tag="butcherHarvest"/>
+        <drop event="Harvest" count="15" name="foodRottingFlesh" tag="allHarvest"/>
+        <drop event="Harvest" count="15" name="foodRottingFlesh" tag="butcherHarvest"/>
+        <drop event="Harvest" count="7" name="resourceAnimalFat" tag="butcherHarvest"/>
+        <drop event="Harvest" count="0,40" name="oldCash" tag="allHarvest" prob="0.7"/>
+        <drop event="Harvest" count="1" name="medicalBloodBag" tag="allHarvest" prob="0.05"/>
+
+    </append>
+
+    <!-- Putrid Girl || zombie Arlene -->
+    <append xpath="/entity_classes/entity_class[@name='zombieArlene']">
+        <drop event="Harvest" count="1" name="apparelDirtySkirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Departed Woman || zombieMarlene -->
+    <append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Stripper || zombiePartyGirl -->
+    <append xpath="/entity_classes/entity_class[@name='zombiePartGirl']">
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Plagued Nurse || zombieNurse -->
+    <append xpath="/entity_classes/entity_class[@name='zombieNurse']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Festering Cadaver || zombieJoe -->
+    <append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyCoatJacketGeneric" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Reanimated Corpse || zombieSteve-->
+    <append xpath="/entity_classes/entity_class[@name='zombieSteve']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Tom Clark || zombieTomClark -->
+    <append xpath="/entity_classes/entity_class[@name='zombieTomClark']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Business Man || zombieBusinessMan -->
+    <append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']">
+        <drop event="Harvest" count="1" name="apparelDirtySuitPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtySuitJacket" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelSuitDressShoes" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Burn Victim || zombieBurnt -->
+    <append xpath="/entity_classes/entity_class[@name='zombieBurnt']">
+        <drop event="Harvest" count="0,10" name="resourceCoal" tag="allHarvest" prob="0.3"/>
+    </append>
+
+    <!-- Spider Zombie || zombieSpider -->
+    <append xpath="/entity_classes/entity_class[@name='zombieSpider']">
+        <drop event="Harvest" count="1" name="apparelDirtyArmyPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="0,10" name="ammo9mmBulletBall" tag="allHarvest" prob="0.3"/>
+        <drop event="Harvest" count="5" name="resourceBone" tag="allHarvest"/>
+    </append>
+
+    <!-- Infected Survivor || zombieBoe -->
+    <append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelWornBoots" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Janitor || zombieJanitor -->
+    <append xpath="/entity_classes/entity_class[@name='zombieJanitor']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyFlannelShirt" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Bloated Walker || zombieMoe -->
+    <append xpath="/entity_classes/entity_class[@name='zombieMoe']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Lab Zombie || zombieLab -->
+    <append xpath="/entity_classes/entity_class[@name='zombieLab']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Infected Mother || zombieDarlene -->
+    <append xpath="/entity_classes/entity_class[@name='zombieDarlene']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Rotting Carcass || zombieYo -->
+    <append xpath="/entity_classes/entity_class[@name='zombieYo']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyFlannelShirt" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Utility Worker || zombieUtilityWorker -->
+    <append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyFlannelShirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelWornBoots" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Biker || zombieBiker -->
+    <append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+        <drop event="Harvest" count="1" name="apparelDirtyGothPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelGothBoots" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyJacketGeneric" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="10" name="foodRottingFlesh" tag="butcherHarvest"/>
+    </append>
+
+    <!-- Zombie LumberJack || zombieLumberjack -->
+    <append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyFlannelShirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelWornBoots" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="10" name="foodRottingFlesh" tag="butcherHarvest"/>
+    </append>
+
+    <!-- Hungry Zombie || zombieFemaleFat -->
+    <append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+        <drop event="Harvest" count="1" name="apparelDirtySkirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="7" name="resourceAnimalFat" tag="butcherHarvest"/>
+    </append>
+
+    <!-- Fat Hawaiian || zombieFatHawaiian -->
+    <append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="7" name="resourceAnimalFat" tag="butcherHarvest"/>
+    </append>
+
+    <!-- Hazmat Zombie || zombieMaleHazmat-->
+    <append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']">
+        <drop event="Harvest" count="1" name="apparelHazmatBoots" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelHazmatPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelHazmatJacket" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelHazmatGloves" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelHazmatMask" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Infected Police Officer || zombieFatCop-->
+    <append xpath="/entity_classes/entity_class[@name='zombieFatCop']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="10" name="resourceGunPowder" tag="allHarvest"/>
+        <drop event="Harvest" count="0,10" name="ammo9mmBulletBall" tag="allHarvest" prob="0.3"/>
+    </append>
+
+    <!-- Skater Punk Zombie || zombieSkateboarder-->
+    <append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyHoodySweatshirt" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Fall Soldier Zombie || zombieSoldier -->
+    <append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+        <drop event="Harvest" count="1" name="apparelDirtyArmyPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyArmyShirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelWornBoots" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="0,10" name="ammo9mmBulletBall" tag="allHarvest" prob="0.3"/>
+        <drop event="Harvest" count="0,3" name="thrownGrenade" tag="allHarvest" prob="0.3"/>
+    </append>
+
+    <!-- Feral Wight || zombieWightFeral -->
+    <append xpath="/entity_classes/entity_class[@name='zombieWightFeral']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShorts" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Zombie Screamer || zombieScreamer -->
+    <append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+        <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtySkirt" tag="allHarvest" prob="0.5"/>
+    </append>
+
+    <!-- Mutated Zombie || zombieMutated -->
+    <append xpath="/entity_classes/entity_class[@name='zombieMutated']">
+        <drop event="Harvest" count="1" name="apparelDirtyDenimShortsPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
+    </append>
+
+<!--    zombieDemolition -->
+    <append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+        <drop event="Harvest" count="1" name="apparelDirtyArmyPants" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelDirtyArmyShirt" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="1" name="apparelWornBoots" tag="allHarvest" prob="0.5"/>
+        <drop event="Harvest" count="20" name="resourceGunPowder" tag="allHarvest"/>
+        <drop event="Harvest" count="0,10" name="ammo9mmBulletBall" tag="allHarvest" prob="0.3"/>
+        <drop event="Harvest" count="0,10" name="thrownGrenade" tag="allHarvest" prob="0.3"/>
+    </append>
+
+    <!-- Crawler Zombie || zombieSteveCrawler -->
+    <append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']">
 
     </append>
 

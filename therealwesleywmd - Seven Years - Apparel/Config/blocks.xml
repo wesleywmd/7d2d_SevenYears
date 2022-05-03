@@ -1,0 +1,52 @@
+<sevenyears>
+
+	<remove xpath="/blocks/block[@name='cntWasherOpen']/drop[not(@event='Fall')]"/>
+	<append xpath="/blocks/block[@name='cntWasherOpen']">
+		<drop event="Destroy" name="washingMachine" count="1"/>
+	</append>
+
+	<append xpath="/blocks">
+
+		<block name="washingMachine">
+			<property name="Class" value="Workstation"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="#Entities/LootContainers?washerClosedPrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="IsDecoration" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceMechanicalParts" value="2"/>
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Destroy" name="washingMachine" count="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="EconomicValue" value="60"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="77"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor,MC_building,SC_loot,SC_electrical"/>
+			<property name="SortOrder1" value="70i0"/>
+			<property name="CustomIcon" value="cntWasherClosed"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Weight" value="0"/>
+			<property name="HeatMapStrength" value="2"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="washingmachine"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_trashcompactor"/>
+			<property name="OpenSound" value="open_workbench"/>
+			<property name="CloseSound" value="close_workbench"/>
+			<property name="WorkstationJournalTip" value="workbenchTip"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="workbenchDesc"/>
+		</block>
+
+	</append>
+
+</sevenyears>

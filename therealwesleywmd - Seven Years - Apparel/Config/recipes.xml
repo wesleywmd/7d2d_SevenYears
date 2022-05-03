@@ -1,0 +1,343 @@
+<configs>
+	<append xpath="/recipes">
+
+		<recipe name="resourceWoodAsh" count="2000" craft_time="20" craft_area="campfire">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+
+		<recipe name="resourceLye" count="10" craft_time="20" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="resourceWoodAsh" count="2000"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="laundrySoap" count="50" craft_time="45">
+			<ingredient name="resourceLye" count="8"/>
+			<ingredient name="resourceAnimalFat" count="64"/>
+		</recipe>
+
+        <recipe name="apparelDenimPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyDenimPants" count="1"/>
+        </recipe>
+
+        <recipe name="apparelDenimShortsPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyDenimShortsPants" count="1"/>
+        </recipe>
+
+        <recipe name="apparelArmyPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyArmyPants" count="1"/>
+        </recipe>
+
+        <recipe name="apparelOveralls" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyOveralls" count="1"/>
+        </recipe>
+
+        <recipe name="apparelSkirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtySkirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelGothPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyGothPants" count="1"/>
+        </recipe>
+
+        <recipe name="apparelLongShirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyLongShirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelArmyShirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyArmyShirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelSweatshirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtySweatshirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelFlannelShirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyFlannelShirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelTShirtPlain" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyTShirtPlain" count="1"/>
+        </recipe>
+
+        <recipe name="apparelTShirtZU" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyTShirtZU" count="1"/>
+        </recipe>
+
+        <recipe name="apparelTankTop" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyTankTop" count="1"/>
+        </recipe>
+
+        <recipe name="apparelHoodySweatshirt" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyHoodySweatshirt" count="1"/>
+        </recipe>
+
+        <recipe name="apparelCoatPufferCoat" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyCoatPufferCoat" count="1"/>
+        </recipe>
+
+        <recipe name="apparelCoatJacketGeneric" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtyCoatJacketGeneric" count="1"/>
+        </recipe>
+
+        <recipe name="apparelCoatJacketLetterZU" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelCoatJacketLetterZU" count="1"/>
+        </recipe>
+
+        <recipe name="apparelSuitPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtySuitPants" count="1"/>
+        </recipe>
+
+        <recipe name="apparelSuitPants" count="1" craft_time="18" craft_area="washingmachine">
+            <ingredient name="laundrySoap" count="1"/>
+            <ingredient name="apparelDirtySuitPants" count="1"/>
+        </recipe>
+
+		<!-- Ghillie Suit Apparel -->
+		<recipe name="apparelBundleGhillieSuitHood" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGhillieSuitHood" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleGhillieSuitPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGhillieSuitPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleGhillieSuitJacket" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGhillieSuitJacket" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Hazmat Suit Apparel -->
+		<recipe name="apparelBundleHazmatBoots" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHazmatBoots" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleHazmatPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHazmatPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleHazmatJacket" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHazmatJacket" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleHazmatGloves" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHazmatGloves" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleHazmatMask" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHazmatMask" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Head Apparel -->
+		<recipe name="apparelBundleCowboyHat" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCowboyHat" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleBallCap" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelBallCap" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleSkullCap" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSkullCap" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundlePressboyCap" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelPressboyCap" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleGasMask" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGasMask" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Face Apparel -->
+		<recipe name="apparelBundleShades" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelShades" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleToughGuySunglasses" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelToughGuySunglasses" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleAviatorGoggles" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelAviatorGoggles" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleSkiGoggles" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSkiGoggles" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleNerdGlasses" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelNerdGlasses" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleNightvisionGoggles" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelNightvisionGoggles" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleCigar" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCigar" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleCigarette" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCigarette" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleFacialPiercings" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelFacialPiercings" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleBandana" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelBandana" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Legs Apparel -->
+		<recipe name="apparelBundleDenimPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelDenimPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleDenimShortsPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelDenimShortsPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleArmyPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelArmyPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleOveralls" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelOveralls" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleSkirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSkirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleGothPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGothPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Feet Apparel -->
+		<recipe name="apparelBundleWornBoots" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelWornBoots" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleRunningShoesRegular" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelRunningShoesRegular" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleRunningShoesHP" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelRunningShoesHP" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleCowboyBoots" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCowboyBoots" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		<recipe name="apparelBundleGothBoots" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelGothBoots" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		
+		<!-- Chest Apparel -->
+		<recipe name="apparelBundleLongShirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelLongShirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleArmyShirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelArmyShirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleSweatshirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSweatshirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleFlannelShirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelFlannelShirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleTShirtPlain" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelTShirtPlain" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleTShirtZU" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelTShirtZU" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleTankTop" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelTankTop" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleHoodySweatshirt" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelHoodySweatshirt" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleCoatLeatherPoncho" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCoatLeatherPoncho" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleCoatLeatherDuster" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCoatLeatherDuster" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleCoatPufferCoat" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCoatPufferCoat" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleCoatJacketGeneric" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCoatJacketGeneric" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleCoatJacketLetterZU" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelCoatJacketLetterZU" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+
+		<!-- Suit Apparel -->
+		<recipe name="apparelBundleSuitPants" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSuitPants" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleSuitJacket" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSuitJacket" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+		</recipe>
+		<recipe name="apparelBundleSuitDressShoes" count="1" craft_time="10" craft_area="washingmachine">
+			<ingredient name="apparelSuitDressShoes" count="5"/>
+			<ingredient name="resourcePaper" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+	</append>
+</configs>

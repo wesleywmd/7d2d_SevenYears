@@ -1,0 +1,654 @@
+<configs>
+
+	<append xpath="/items/item[@name='apparelDenimPants']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelDenimShortsPants']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelArmyPants']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelOveralls']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelSkirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelGothPants']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelLongShirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelArmyShirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelSweatshirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelFlannelShirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelTShirtPlain']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelTShirtZU']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelTankTop']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelHoodySweatshirt']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelCoatPufferCoat']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelCoatJacketGeneric']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelCoatJacketLetterZU']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelSuitPants']/property[@name='Group']/@value">,WM_Clothes</append>
+	<append xpath="/items/item[@name='apparelSuitJacket']/property[@name='Group']/@value">,WM_Clothes</append>
+
+	<append xpath="/items">
+
+		<item name="resourceWoodAsh">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mair"/>
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="2000"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="EconomicBundleSize" value="2000"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="apparelBundleGroupDesc"/>
+		</item>
+
+		<item name="resourceLye">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mair"/>
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="apparelBundleGroupDesc"/>
+		</item>
+
+		<item name="laundrySoap">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mair"/>
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="EconomicValue" value="12"/>
+			<property name="Group" value="Resources"/>
+			<property name="DescriptionKey" value="apparelBundleGroupDesc"/>
+			<property name="CustomIcon" value="plasticChemicalBottle"/>
+			<property name="CustomIconTint" value="e88ebb"/>
+		</item>
+
+		<item name="apparelDirtyMaster">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Weight" value="0"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="Group" value="WM_Clothes"/>
+			<property name="DescriptionKey" value="apparelBundleGroupDesc"/>
+			<property name="CustomIconTint" value="B06B43"/>
+			<property name="ItemTypeIcon" value="ui_game_symbol_dirty"/>
+		</item>
+
+		<item name="apparelBundleMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="apparelWornBoots"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="apparelBundleGroupDesc"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mcloth"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="Group" value="Clothing,WM_Packages"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Sound_start" value="close_garbage"/>
+				<property name="Create_item" value="apparelWornBoots"/>
+				<property name="Create_item_count" value="5"/>
+			</property>
+		</item>
+
+		<!-- Ghillie Suit Apparel -->
+		<item name="apparelBundleGhillieSuitHood">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGhillieSuitHood"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGhillieSuitHood"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleGhillieSuitPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGhillieSuitPants"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGhillieSuitPants"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleGhillieSuitJacket">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGhillieSuitJacket"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGhillieSuitJacket"/>
+			</property>
+		</item>
+
+		<!-- Hazmat Suit Apparel -->
+		<item name="apparelBundleHazmatBoots">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHazmatBoots"/>
+			<property name="EconomicValue" value="20000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHazmatBoots"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleHazmatPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHazmatPants"/>
+			<property name="EconomicValue" value="20000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHazmatPants"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleHazmatJacket">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHazmatJacket"/>
+			<property name="EconomicValue" value="20000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHazmatJacket"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleHazmatGloves">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHazmatGloves"/>
+			<property name="EconomicValue" value="20000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHazmatGloves"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleHazmatMask">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHazmatMask"/>
+			<property name="EconomicValue" value="20000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHazmatMask"/>
+			</property>
+		</item>
+
+		<!-- Head Apparel -->
+		<item name="apparelBundleCowboyHat">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCowboyHat"/>
+			<property name="EconomicValue" value="11000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCowboyHat"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleBallCap">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelBallCap"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelBallCap"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleSkullCap">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSkullCap"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSkullCap"/>
+			</property>
+		</item>
+
+		<item name="apparelBundlePressboyCap">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelPressboyCap"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelPressboyCap"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleGasMask">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGasMask"/>
+			<property name="EconomicValue" value="40000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGasMask"/>
+			</property>
+		</item>
+
+		<!-- Face Apparel -->
+		<item name="apparelBundleShades">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelShades"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelShades"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleToughGuySunglasses">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelToughGuySunglasses"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelToughGuySunglasses"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleAviatorGoggles">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelAviatorGoggles"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelAviatorGoggles"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleSkiGoggles">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSkiGoggles"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSkiGoggles"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleNerdGlasses">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelNerdGlasses"/>
+			<property name="EconomicValue" value="50000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelNerdGlasses"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleNightvisionGoggles">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelNightvisionGoggles"/>
+			<property name="EconomicValue" value="100000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelNightvisionGoggles"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleCigar">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCigar"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCigar"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleCigarette">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCigarette"/>
+			<property name="EconomicValue" value="25000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCigarette"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleFacialPiercings">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelFacialPiercings"/>
+			<property name="EconomicValue" value="2500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelFacialPiercings"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleBandana">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelBandana"/>
+			<property name="EconomicValue" value="500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelBandana"/>
+			</property>
+		</item>
+
+		<!-- Legs Apparel -->
+		<item name="apparelDirtyDenimPants">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelDenimPants"/>
+		</item>
+
+		<item name="apparelBundleDenimPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelDenimPants"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelDenimPants"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyDenimShortsPants">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelDenimShortsPants"/>
+		</item>
+
+		<item name="apparelBundleDenimShortsPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelDenimShortsPants"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelDenimShortsPants"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyArmyPants">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelArmyPants"/>
+		</item>
+
+		<item name="apparelBundleArmyPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelArmyPants"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelArmyPants"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyOveralls">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelOveralls"/>
+		</item>
+
+		<item name="apparelBundleOveralls">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelOveralls"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelOveralls"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtySkirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelSkirt"/>
+		</item>
+
+		<item name="apparelBundleSkirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSkirt"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSkirt"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyGothPants">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelGothPants"/>
+		</item>
+
+		<item name="apparelBundleGothPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGothPants"/>
+			<property name="EconomicValue" value="5000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGothPants"/>
+			</property>
+		</item>
+
+		<!-- Feet Apparel -->
+		<item name="apparelBundleWornBoots">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelWornBoots"/>
+			<property name="EconomicValue" value="3000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelWornBoots"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleRunningShoesRegular">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelRunningShoesRegular"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleRunningShoesHP">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelRunningShoesHP"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelRunningShoesHP"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleCowboyBoots">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCowboyBoots"/>
+			<property name="EconomicValue" value="12500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCowboyBoots"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleGothBoots">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelGothBoots"/>
+			<property name="EconomicValue" value="12500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelGothBoots"/>
+			</property>
+		</item>
+		
+		<!-- Chest Apparel -->
+		<item name="apparelDirtyLongShirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelLongShirt"/>
+		</item>
+
+		<item name="apparelBundleLongShirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelLongShirt"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelLongShirt"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyArmyShirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelArmyShirt"/>
+		</item>
+
+		<item name="apparelBundleArmyShirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelArmyShirt"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelArmyShirt"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtySweatshirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelSweatshirt"/>
+		</item>
+
+		<item name="apparelBundleSweatshirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSweatshirt"/>
+			<property name="EconomicValue" value="3000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSweatshirt"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyFlannelShirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelFlannelShirt"/>
+		</item>
+
+		<item name="apparelBundleFlannelShirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelFlannelShirt"/>
+			<property name="EconomicValue" value="3000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelFlannelShirt"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyTShirtPlain">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelTShirtPlain"/>
+		</item>
+
+		<item name="apparelBundleTShirtPlain">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelTShirtPlain"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelTShirtPlain"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyTShirtZU">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelTShirtZU"/>
+		</item>
+
+		<item name="apparelBundleTShirtZU">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelTShirtZU"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelTShirtZU"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyTankTop">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelTankTop"/>
+		</item>
+
+		<item name="apparelBundleTankTop">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelTankTop"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelTankTop"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyHoodySweatshirt">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelDirtyHoodySweatshirt"/>
+		</item>
+
+		<item name="apparelBundleHoodySweatshirt">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelHoodySweatshirt"/>
+			<property name="EconomicValue" value="3000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelHoodySweatshirt"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleCoatLeatherPoncho">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCoatLeatherPoncho"/>
+			<property name="EconomicValue" value="24000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCoatLeatherPoncho"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleCoatLeatherDuster">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCoatLeatherDuster"/>
+			<property name="EconomicValue" value="23750"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCoatLeatherDuster"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyCoatPufferCoat">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelCoatPufferCoat"/>
+		</item>
+
+		<item name="apparelBundleCoatPufferCoat">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCoatPufferCoat"/>
+			<property name="EconomicValue" value="22500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCoatPufferCoat"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyCoatJacketGeneric">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelCoatJacketGeneric"/>
+		</item>
+
+		<item name="apparelBundleCoatJacketGeneric">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCoatJacketGeneric"/>
+			<property name="EconomicValue" value="17500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCoatJacketGeneric"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtyCoatJacketLetterZU">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+		</item>
+
+		<item name="apparelBundleCoatJacketLetterZU">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelCoatJacketLetterZU"/>
+			<property name="EconomicValue" value="17500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelCoatJacketLetterZU"/>
+			</property>
+		</item>
+
+		<!-- Suit Apparel -->
+		<item name="apparelDirtySuitPants">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelSuitPants"/>
+		</item>
+
+		<item name="apparelBundleSuitPants">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSuitPants"/>
+			<property name="EconomicValue" value="2000"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSuitPants"/>
+			</property>
+		</item>
+
+		<item name="apparelDirtySuitJacket">
+			<property name="Extends" value="apparelDirtyMaster"/>
+			<property name="CustomIcon" value="apparelSuitJacket"/>
+		</item>
+
+		<item name="apparelBundleSuitJacket">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSuitJacket"/>
+			<property name="EconomicValue" value="24950"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSuitJacket"/>
+			</property>
+		</item>
+
+		<item name="apparelBundleSuitDressShoes">
+			<property name="Extends" value="apparelBundleMaster"/>
+			<property name="CustomIcon" value="apparelSuitDressShoes"/>
+			<property name="EconomicValue" value="12500"/>
+			<property class="Action0">
+				<property name="Create_item" value="apparelSuitDressShoes"/>
+			</property>
+		</item>
+	</append>
+</configs>
