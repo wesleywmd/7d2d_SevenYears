@@ -97,12 +97,6 @@
 		<drop event="Destroy" name="cntStoveModernVer2Closed" count="1"/>
 	</append>
 
-	<remove xpath="/blocks/block[@name='cntToaster']/drop[not(@event='Fall')]"/>
-	<append xpath="/blocks/block[@name='cntToaster']">
-		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
-		<drop event="Destroy" name="cntToaster" count="1"/>
-	</append>
-
 	<remove xpath="/blocks/block[@name='cntCoffeeMaker']/drop[not(@event='Fall')]"/>
 	<append xpath="/blocks/block[@name='cntCoffeeMaker']">
 		<drop event="Harvest" name="resourceScrapIron" count="0" tag="allHarvest"/>
