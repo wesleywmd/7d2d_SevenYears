@@ -5,7 +5,7 @@
 	<append xpath="/items/item[@name='resourcePaper']/property[@name='Group']/@value">,TC_Papers</append>
 	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='Stacknumber']" name="value">200</setattribute>
 	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='EconomicValue']" name="value">1</setattribute>
-	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='EconomicBundleSize']" name="value">10</setattribute>
+	<setattribute xpath="/items/item[@name='resourcePaper']/property[@name='EconomicBundleSize']" name="value">1</setattribute>
 
 	<append xpath="/items">
 
@@ -59,6 +59,23 @@
 		<item name="plasticWaterBottle">
 			<property name="Extends" value="plasticMaster" />
 			<property name="Stacknumber" value="25" />
+		</item>
+
+		<item name="resourceApplianceParts">
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapPolymers"/> <property name="Weight" value="0"/>
+			<property name="Group" value="Resources,TC_Appliances"/>
+			<property name="EconomicValue" value="100"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+				<property name="Use_time" value="0"/>
+				<property name="Create_item" value="resourceMechanicalParts,resourceElectricParts,resourceScrapIron,resourceScrapBrass,resourceScrapPolymers"/>
+				<property name="Create_item_count" value="5,3,15,7,20"/>
+			</property>
 		</item>
 
 	</append>

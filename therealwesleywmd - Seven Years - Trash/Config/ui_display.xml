@@ -6,6 +6,7 @@
 			<crafting_category name="TC_Plastics" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
 			<crafting_category name="TC_Papers" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
 			<crafting_category name="TC_Pallets" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
+			<crafting_category name="TC_Appliances" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
 		</crafting_category_list>
 	
 	</append>

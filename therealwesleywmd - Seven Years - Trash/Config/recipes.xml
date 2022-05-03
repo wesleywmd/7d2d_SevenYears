@@ -18,7 +18,7 @@
 			<ingredient name="plasticFoodContainer" count="1"/>
 		</recipe>
 
-		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="6" craft_exp_gain="3">
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="10" craft_time="6" craft_exp_gain="3">
 			<ingredient name="plasticStorageContainer" count="1"/>
 		</recipe>
 
@@ -30,8 +30,20 @@
 			<ingredient name="cntTrashPile01" count="1"/>
 		</recipe>
 
-		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="15" craft_time="5" craft_exp_gain="1">
 			<ingredient name="cntBruteStyleTrashCanFull" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntCoolerClosed" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntCoolerClosedRed" count="1"/>
+		</recipe>
+
+		<recipe name="resourceScrapPolymers" craft_area="trashcompactor" count="12" craft_time="5" craft_exp_gain="1">
+			<ingredient name="cntCoolerClosedGreen" count="1"/>
 		</recipe>
 
 		<recipe name="resourcePaper" craft_area="trashcompactor" count="4" craft_time="5" craft_exp_gain="1">
@@ -64,6 +76,26 @@
 
 		<recipe name="palletCompressedCardboard" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
 			<ingredient name="resourcePaper" count="500"/>
+		</recipe>
+
+		<recipe name="resourceApplianceParts" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="cntToaster" count="1"/>
+		</recipe>
+
+		<recipe name="resourceApplianceParts" craft_area="trashcompactor" count="2" craft_time="15" craft_exp_gain="1">
+			<ingredient name="cntMicrowaveOvenVer1Closed" count="1"/>
+		</recipe>
+
+		<recipe name="resourceApplianceParts" craft_area="trashcompactor" count="2" craft_time="15" craft_exp_gain="1">
+			<ingredient name="cntMicrowaveOvenVer2Closed" count="1"/>
+		</recipe>
+
+		<recipe name="resourceApplianceParts" craft_area="trashcompactor" count="1" craft_time="15" craft_exp_gain="1">
+			<ingredient name="cntCoffeeMaker" count="1"/>
+		</recipe>
+
+		<recipe name="resourceApplianceParts" craft_area="trashcompactor" count="3" craft_time="15" craft_exp_gain="1">
+			<ingredient name="cntCoffeeMakerCommercial" count="1"/>
 		</recipe>
 
 	</append>
