@@ -39,7 +39,9 @@ This overhaul was written without any other mods or molets installed. Currently,
 - Toasters can now be picked up similar to base game chairs. 
 - Update to questline adding new missions and adjusting beginning ones. Still pre-chapter one.
 
-## v0.2 Initial Beta Release - 4/26/2022
+## v0.2 Release - 4/26/2022
+
+- Initial Beta Release of the overhaul. 
 
 # Contact Information
 
