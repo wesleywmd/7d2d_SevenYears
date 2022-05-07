@@ -4,4 +4,164 @@
 <!--	<removeattribute xpath="/recipes/recipe[@name='foodBaconAndEggs']/@craft_tool"/>-->
 <!--	<removeattribute xpath="/recipes/recipe[@name='foodBaconAndEggs']/@tags"/>-->
 
+    <!-- Water -->
+    <remove xpath="/recipes/recipe[@name='drinkJarRiverWater']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarBoiledWater']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarPureMineralWater']"/>
+
+    <!-- Coffee -->
+    <remove xpath="/recipes/recipe[@name='drinkJarCoffee']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarBlackStrapCoffee']"/>
+
+    <!-- Drinks -->
+    <remove xpath="/recipes/recipe[@name='drinkJarGoldenRodTea']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarRedTea']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarYuccaJuice']"/>
+    <remove xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']"/>
+
+    <!-- Food -->
+    <remove xpath="/recipes/recipe[@name='foodBaconAndEggs']"/>
+
+    <!-- Alcoholic TODO move to Zymology -->
+    <remove xpath="/recipes/recipe[@name='drinkJarBeer']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasAwesomeSauce']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasLearningElixir']"/>
+    <remove xpath="/recipes/recipe[@name='drinkJarGrandpasMoonshine']"/>
+
+    <append xpath="/recipes">
+
+        <!-- Water -->
+        <recipe name="drinkJarRiverWater" craft_time="15" count="1" craft_area="campfire">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+        <recipe name="drinkJarRiverWater" craft_time="5" count="1" craft_area="coffeemaker">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+        <recipe name="drinkJarRiverWater" craft_time="5" count="1" craft_area="coffeemakercommercial">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+        <recipe name="drinkJarRiverWater" craft_time="5" count="1" craft_area="sodafountain">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarBoiledWater" count="1" craft_time="40" craft_area="campfire">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+        <recipe name="drinkJarBoiledWater" count="1" craft_time="10" craft_area="coffeemaker">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+        <recipe name="drinkJarBoiledWater" count="1" craft_time="10" craft_area="coffeemakercommercial">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+        <recipe name="drinkJarBoiledWater" count="1" craft_time="10" craft_area="sodafountain">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarPureMineralWater" count="1" craft_time="30" craft_area="coffeemakercommercial">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+            <ingredient name="resourceCoal" count="1"/>
+            <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+            <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+        </recipe>
+        <recipe name="drinkJarPureMineralWater" count="1" craft_time="30" craft_area="sodafountain">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+            <ingredient name="resourceCoal" count="1"/>
+            <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+            <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+        </recipe>
+
+        <!-- Coffee -->
+        <recipe name="drinkJarCoffee" count="3" craft_time="45" craft_area="coffeemaker">
+            <ingredient name="resourceCropCoffeeBeans" count="3"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+        <recipe name="drinkJarCoffee" count="3" craft_time="30" craft_area="coffeemakercommercial">
+            <ingredient name="resourceCropCoffeeBeans" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+        </recipe>
+
+        <recipe name="drinkJarBlackStrapCoffee" craft_time="45" count="3" craft_area="coffeemaker">
+            <ingredient name="resourceCropCoffeeBeans" count="3"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+            <ingredient name="resourceGunPowder" count="15"/>
+        </recipe>
+        <recipe name="drinkJarBlackStrapCoffee" craft_time="30" count="3" craft_area="coffeemakercommercial">
+            <ingredient name="resourceCropCoffeeBeans" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="3"/>
+            <ingredient name="resourceGunPowder" count="10"/>
+        </recipe>
+
+        <!-- Drinks -->
+        <recipe name="drinkJarGoldenRodTea" count="1" craft_time="18" craft_area="sodafountain">
+            <ingredient name="resourceCropGoldenrodPlant" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarRedTea" count="1" craft_time="18" craft_area="sodafountain">
+            <ingredient name="resourceCropChrysanthemumPlant" count="1"/>
+            <ingredient name="drinkJarBoiledWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarYuccaJuice" count="1" craft_time="26" craft_area="sodafountain">
+            <ingredient name="foodCropYuccaFruit" count="2"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="drinkYuccaJuiceSmoothie" count="1" craft_time="26" craft_area="sodafountain">
+            <ingredient name="foodCropYuccaFruit" count="4"/>
+            <ingredient name="foodCropBlueberries" count="4"/>
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+        <!-- Food -->
+        <recipe name="foodBaconAndEggs" count="1" craft_time="28" craft_area="campfire" craft_tool="toolCookingPot">
+            <ingredient name="foodRawMeat" count="7"/>
+            <ingredient name="foodEgg" count="3"/>
+        </recipe>
+        <recipe name="foodBaconAndEggs" count="1" craft_time="16" craft_area="charcoalgrill" craft_tool="toolCookingPot">
+            <ingredient name="foodRawMeat" count="5"/>
+            <ingredient name="foodEgg" count="2"/>
+        </recipe>
+        <recipe name="foodBaconAndEggs" count="1" craft_time="12" craft_area="gasgrill" craft_tool="toolCookingPot">
+            <ingredient name="foodRawMeat" count="5"/>
+            <ingredient name="foodEgg" count="2"/>
+        </recipe>
+
+        <!-- Alcoholic -->
+        <recipe name="drinkJarBeer" count="1" craft_area="chemistryStation">
+            <ingredient name="resourceCropHopsFlower" count="4"/>
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarGrandpasAwesomeSauce" count="1" craft_area="coffeemakercommercial">
+            <ingredient name="casinoCoin" count="50"/>
+            <ingredient name="foodHoney" count="5"/>
+            <ingredient name="foodCropMushrooms" count="5"/>
+            <ingredient name="ammoGasCan" count="10"/>
+            <ingredient name="foodCropGraceCorn" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarGrandpasLearningElixir" count="1" craft_area="coffeemakercommercial">
+            <ingredient name="foodCanDogfood" count="2"/>
+            <ingredient name="drinkJarRedTea" count="2"/>
+            <ingredient name="resourceAcid" count="1"/>
+            <ingredient name="drinkJarBeer" count="1"/>
+            <ingredient name="foodCropGraceCorn" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarGrandpasMoonshine" count="1" craft_area="coffeemakercommercial">
+            <ingredient name="foodCornMeal" count="5"/>
+            <ingredient name="drinkJarBeer" count="1"/>
+            <ingredient name="foodCropBlueberries" count="5"/>
+            <ingredient name="resourceAcid" count="1"/>
+            <ingredient name="foodCropGraceCorn" count="1"/>
+        </recipe>
+
+    </append>
+
 </sevenyears>

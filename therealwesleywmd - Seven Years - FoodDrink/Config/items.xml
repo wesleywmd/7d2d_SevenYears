@@ -1,7 +1,46 @@
 <sevenyears>
 
-    <setattribute xpath="/items/item[@name='foodBaconAndEggs']" name="Group">Food/Cooking,GasGrillCommon</setattribute>
+    <!-- Waters -->
+    <append xpath="/items/item[@name='drinkJarRiverWater']/property[@name='Group']/@value">,CO_Basics,CCO_Basics,SF_Basics</append>
 
+    <append xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Group']/@value">,CO_Basics,CCO_Basics,SF_Basics</append>
+
+    <append xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Group']/@value">,CCO_Basics,SF_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='UnlockedBy']"/>
+
+    <!-- Coffees -->
+    <append xpath="/items/item[@name='drinkJarCoffee']/property[@name='Group']/@value">,CO_Basics,CCO_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarCoffee']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarBlackStrapCoffee']/property[@name='Group']/@value">,CCO_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarBlackStrapCoffee']/property[@name='UnlockedBy']"/>
+
+    <!-- Drinks -->
+    <append xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Group']/@value">,SF_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarRedTea']/property[@name='Group']/@value">,SF_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarRedTea']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='Group']/@value">,SF_Basics</append>
+
+    <append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='Group']/@value">,SF_Basics</append>
+    <remove xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='UnlockedBy']"/>
+
+    <!-- Foods -->
+    <append xpath="/items/item[@name='foodBaconAndEggs']/property[@name='Group']/@value">,CG_Basics,GG_Basics</append>
     <remove xpath="/items/item[@name='foodBaconAndEggs']/property[@name='UnlockedBy']"/>
+
+    <!-- Alcohols TODO move to Zymology module -->
+    <remove xpath="/items/item[@name='drinkJarBeer']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='Group']/@value">,CCO_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='Group']/@value">,CCO_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='UnlockedBy']"/>
+
+    <append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='Group']/@value">,CCO_Basics</append>
+    <remove xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='UnlockedBy']"/>
 
 </sevenyears>
