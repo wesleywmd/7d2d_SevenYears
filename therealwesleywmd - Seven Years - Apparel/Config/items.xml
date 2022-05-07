@@ -1,24 +1,15 @@
 <configs>
 
 	<append xpath="/items/item[@name='apparelDenimPants']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelDenimShortsPants']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelArmyPants']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelOveralls']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelSkirt']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelGothPants']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelLongShirt']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelArmyShirt']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelSweatshirt']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelFlannelShirt']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelTShirtPlain']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelTShirtZU']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelTankTop']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelHoodySweatshirt']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelCoatPufferCoat']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelCoatJacketGeneric']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelCoatJacketLetterZU']/property[@name='Group']/@value">,WM_Clothes</append>
 	<append xpath="/items/item[@name='apparelSuitPants']/property[@name='Group']/@value">,WM_Clothes</append>
-	<append xpath="/items/item[@name='apparelSuitJacket']/property[@name='Group']/@value">,WM_Clothes</append>
 
 	<append xpath="/items">
 
