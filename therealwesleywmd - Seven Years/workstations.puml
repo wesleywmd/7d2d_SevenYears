@@ -9,11 +9,11 @@
     state Kitchen #yellow {
         state Campfire #yellow
         Campfire --> Grill #yellow
-        Campfire --> CoffeeMachine #orange
+        Campfire --> CoffeeMachine #yellow
         Grill --> Stove #orange
         Grill --> Microwave #orange
-        CoffeeMachine --> SodaMachine #orange
-        CoffeeMachine --> IndustrialCoffeeMachine #orange
+        CoffeeMachine --> SodaMachine #yellow
+        CoffeeMachine --> IndustrialCoffeeMachine #yellow
     }
 
     state Internet #yellow {
@@ -24,9 +24,9 @@
 
     state Tools #yellow {
         state TrashCompactor #yellow
-        TrashCompactor --> TableSaw #orange
-        TrashCompactor --> WashingMachine #orange
-        TableSaw --> FurnitureWorkbench #orange
+        TrashCompactor --> TableSaw #yellow
+        TrashCompactor --> WashingMachine #yellow
+        TableSaw --> FurnitureWorkbench #yellow
         WashingMachine --> CementMixer #yellow
     }
 
@@ -57,7 +57,7 @@
 
     state Crafting #yellow {
         state Workbench #yellow
-        state Infirmary #orange
+        state Infirmary #yellow
         Workbench --> MechanicsWorkbench #orange
         Infirmary --> MechanicsWorkbench #orange
         MechanicsWorkbench --> RoboticsWorkbench #orange
