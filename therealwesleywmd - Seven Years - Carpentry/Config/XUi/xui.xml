@@ -1,0 +1,38 @@
+<sevenyears>
+
+    <append xpath="/xui/ruleset">
+
+        <window_group name="workstation_infirmary"
+                      controller="XUiC_WorkstationWindowGroup"
+                      open_backpack_on_open="true" close_compass_on_open="true">
+            <window name="windowCraftingList"/>
+            <window name="craftingInfoPanel"/>
+            <window name="windowCraftingQueue"/>
+            <window name="windowFuel" />
+            <window name="windowOutput" />
+            <window name="windowNonPagingHeader" />
+        </window_group>
+
+        <window_group name="workstation_carpentrySaw"
+                      controller="XUiC_WorkstationWindowGroup"
+                      open_backpack_on_open="true" close_compass_on_open="true">
+            <window name="windowCraftingList"/>
+            <window name="craftingInfoPanel"/>
+            <window name="windowCraftingQueue"/>
+            <window name="windowOutput" />
+            <window name="windowNonPagingHeader" />
+        </window_group>
+
+        <window_group name="workstation_furnitureWorkbench"
+                      controller="XUiC_WorkstationWindowGroup"
+                      open_backpack_on_open="true" close_compass_on_open="true">
+            <window name="windowCraftingList"/>
+            <window name="craftingInfoPanel"/>
+            <window name="windowCraftingQueue"/>
+            <window name="windowOutput" />
+            <window name="windowNonPagingHeader" />
+        </window_group>
+
+    </append>
+
+</sevenyears>

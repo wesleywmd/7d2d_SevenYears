@@ -1,0 +1,13 @@
+<sevenyears>
+
+<!--	<remove xpath="/recipes/recipe[@name='medicalAloeCream']"/>-->
+
+<!--	<append xpath="/recipes">-->
+
+<!--		<recipe name="medicalAloeCream" count="1" craft_time="5" craft_area="infirmary" craft_exp_gain="1">-->
+<!--			<ingredient name="resourceCropAloeLeaf" count="4"/>-->
+<!--		</recipe>-->
+
+<!--	</append>-->
+
+</sevenyears>

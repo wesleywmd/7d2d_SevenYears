@@ -1,0 +1,84 @@
+<sevenyears>
+
+    <append xpath="/items">
+
+        <item name="resourceTimberHardwood">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mdirt"/>
+            <property name="Weight" value="5"/>
+            <property name="Stacknumber" value="6000"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="EconomicBundleSize" value="150"/>
+            <property name="Group" value="Resources"/>
+            <property name="CraftingIngredientTime" value=".2"/>
+        </item>
+
+        <item name="resourceTimberSoftwood">
+            <property name="HoldType" value="45"/>
+            <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mdirt"/>
+            <property name="Weight" value="5"/>
+            <property name="Stacknumber" value="6000"/>
+            <property name="EconomicValue" value="6"/>
+            <property name="EconomicBundleSize" value="150"/>
+            <property name="Group" value="Resources"/>
+            <property name="CraftingIngredientTime" value=".2"/>
+        </item>
+
+    </append>
+
+
+
+
+
+
+
+<!--	<append xpath="/items/item[@name='medicalAloeCream']/property[@name='Group']/@value">,IF_Herbal</append>-->
+
+
+
+
+
+
+    <!--
+
+    Hardwood - building
+    Softwood - firewood
+
+    Felling trees creates = timbers
+    Can craft timber into placeable block = log
+    All tree felling byproduct and small bushes = sticks
+
+    timbers can be crafted into = firewood
+    firewood can be crafted into = sticks
+
+    Woodchips = crushed wood products and felling trees
+
+    items:
+    resourceTimberHardwood
+    resourceTimberSoftwood
+    log (vanilla block) (since its for building, only a hardwood version exists
+    resourceSticks
+    resourceFirewoodHardwood
+    resourceFirewoodSoftwood
+    resourceWoodchips
+    resourceWood (vanilla item) (the vanilla item becomes hardwood planks)
+    resourceWoodSoftwood
+
+
+
+
+    Tree types:
+    (H) Oak (vanilla) : grows : has seeds
+    (S) Pine (vanilla) : grows : has seeds
+    (S) Spruce (vanilla) : grows : has seeds
+
+    (H) Birch (vanilla but non-growing and no seeds) : grows : has seeds
+    (H) Maple (vanilla but non-growing and no seeds) : grows : has seeds
+    Birch (vanilla but non-growing and no seeds) : grows : has seeds
+    -->
+
+</sevenyears>
