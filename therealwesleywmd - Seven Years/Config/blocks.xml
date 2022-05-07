@@ -1,0 +1,27 @@
+<sevenyears>
+
+    <remove xpath="/blocks/block[@name='forge']/property[@name='UnlockedBy']"/>
+    <remove xpath="/blocks/block[@name='forge' or @name='cntCollapsedForge']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='forge' or @name='cntCollapsedForge']">
+        <drop event="Destroy" name="forge" count="1"/>
+    </append>
+
+    <remove xpath="/blocks/block[@name='workbench']/property[@name='UnlockedBy']"/>
+    <remove xpath="/blocks/block[@name='workbench' or @name='cntCollapsedWorkbench']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='workbench' or @name='cntCollapsedWorkbench']">
+        <drop event="Destroy" name="workbench" count="1"/>
+    </append>
+
+    <remove xpath="/blocks/block[@name='cementMixer']/property[@name='UnlockedBy']"/>
+    <remove xpath="/blocks/block[@name='cementMixer' or @name='cntCollapsedCementMixer']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='cementMixer' or @name='cntCollapsedCementMixer']">
+        <drop event="Destroy" name="cementMixer" count="1"/>
+    </append>
+
+    <remove xpath="/blocks/block[@name='chemistryStation']/property[@name='UnlockedBy']"/>
+    <remove xpath="/blocks/block[@name='chemistryStation' or @name='cntCollapsedChemistryStation']/drop[not(@event='Fall')]"/>
+    <append xpath="/blocks/block[@name='chemistryStation' or @name='cntCollapsedChemistryStation']">
+        <drop event="Destroy" name="chemistryStation" count="1"/>
+    </append>
+
+</sevenyears>

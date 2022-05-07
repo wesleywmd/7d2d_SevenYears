@@ -1,7 +1,5 @@
 <sevenyears>
 
-	<remove xpath="/blocks/block[@name='forge']/property[@name='UnlockedBy']"/>
-
 	<append xpath="/blocks">
 
 		<block name="forgeApocalypse">

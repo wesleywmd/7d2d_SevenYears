@@ -2,4 +2,36 @@
 
 	<remove xpath="/recipes/recipe[@name='cntSecureStorageChest']"/>
 
+	<remove xpath="/recipes/recipe[@name='workbench']"/>
+	<remove xpath="/recipes/recipe[@name='forge']"/>
+	<remove xpath="/recipes/recipe[@name='chemistryStation']"/>
+
+	<append xpath="/recipes">
+
+		<recipe name="workbench" count="1">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
+			<ingredient name="meleeToolRepairT1ClawHammer" count="1"/>
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+
+		<recipe name="forge" count="1">
+			<ingredient name="resourceRockSmall" count="50"/>
+			<ingredient name="resourceClayLump" count="60"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="3"/>
+			<ingredient name="resourceMetalPipe" count="3"/>
+		</recipe>
+
+		<recipe name="chemistryStation" count="1">
+			<ingredient name="toolBeaker" count="1"/>
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="toolCookingPot" count="3"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+			<ingredient name="resourceAcid" count="5"/>
+		</recipe>
+
+	</append>
+
 </sevenyears>
