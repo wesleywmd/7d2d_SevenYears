@@ -1,0 +1,18 @@
+<sevenyears>
+
+	<append xpath="/items/item[@name='medicalAloeCream']/property[@name='Group']/@value">,IF_Herbal</append>
+	<append xpath="/items/item[@name='medicalBandage']/property[@name='Group']/@value">,IF_Medical</append>
+	<append xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='Group']/@value">,IF_Medical</append>
+	<remove xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='UnlockedBy']"/>
+	<append xpath="/items/item[@name='medicalFirstAidKit']/property[@name='Group']/@value">,IF_Medical</append>
+	<remove xpath="/items/item[@name='medicalFirstAidKit']/property[@name='UnlockedBy']"/>
+	<append xpath="/items/item[@name='medicalSplint']/property[@name='Group']/@value">,IF_Medical</append>
+	<remove xpath="/items/item[@name='medicalPlasterCast']/property[@name='UnlockedBy']"/>
+	<append xpath="/items/item[@name='drugAntibiotics']/property[@name='Group']/@value">,IF_Medical</append>
+	<remove xpath="/items/item[@name='drugAntibiotics']/property[@name='UnlockedBy']"/>
+	<append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='Group']/@value">,IF_Herbal</append>
+	<remove xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='UnlockedBy']"/>
+	<append xpath="/items/item[@name='drugVitamins']/property[@name='Group']/@value">,IF_Herbal</append>
+	<append xpath="/items/item[@name='drugPainkillers']/property[@name='Group']/@value">,IF_Medical</append>
+
+</sevenyears>
