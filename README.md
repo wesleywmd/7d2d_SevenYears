@@ -19,6 +19,23 @@ This overhaul was written without any other mods or molets installed. Currently,
 
 # Changelog
 
+## v0.4 Release - 5/6/2022
+
+### New Things
+
+- Added Infirmary and moved all medical item recipes to it.
+- Added Coffee Maker, Commercial Coffee Maker, and Soda Machine as workstations. They all handle drink recipes. All vanilla drinks have been updated and recipes moved to respective work stations.
+- Broken Workbenches, Cement Mixers, and Chemistry Stations now harvest to working ones. Recipes had their restrictions removed. Campfires are unchanged.
+- Added Carpentry Saw and Furniture Workbench as workstations. Currently they do nothing. Table Saws now harvest to a Carpentry Saw.
+
+### Fixes
+
+- Fixed bug where marlene was dropping too many clothing items and lumberjack and big mama were dropping nothing.
+- Balanced compost recipes and added birdnest as a compostable. Crysanthymum was removed from the composter.
+- Fixed double dirty suits pants and missing suit jacket recipes in the washing machine.
+- Fixed all xpath warnings for missing results.
+
+
 ## v0.3 Release - 5/3/2022
 
 ### New Things
