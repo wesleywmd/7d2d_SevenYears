@@ -105,9 +105,9 @@
             <ingredient name="apparelDirtySuitPants" count="1"/>
         </recipe>
 
-        <recipe name="apparelSuitPants" count="1" craft_time="18" craft_area="washingmachine">
+        <recipe name="apparelSuitJacket" count="1" craft_time="18" craft_area="washingmachine">
             <ingredient name="laundrySoap" count="1"/>
-            <ingredient name="apparelDirtySuitPants" count="1"/>
+            <ingredient name="apparelDirtySuitJacket" count="1"/>
         </recipe>
 
 		<!-- Ghillie Suit Apparel -->
