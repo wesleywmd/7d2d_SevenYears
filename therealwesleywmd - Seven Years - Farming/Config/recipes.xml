@@ -18,26 +18,26 @@
 
     <append xpath="/recipes">
 
-        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
-        <ingredient name="resourceYuccaFibers" count="50"/>
-    </recipe>
-
-        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
-            <ingredient name="resourceCropChrysanthemumPlant" count="50"/>
+        <recipe name="resourceCompost" craft_area="compostMixer" count="3" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceYuccaFibers" count="40"/>
         </recipe>
 
-        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
-            <ingredient name="resourceCornStock" count="20"/>
+        <recipe name="resourceCompost" craft_area="compostMixer" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="cntBirdnest" count="5"/>
         </recipe>
 
-        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
-            <ingredient name="resourceWoodChips" count="1000"/>
+        <recipe name="resourceCompost" craft_area="compostMixer" count="1" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceCornStock" count="5"/>
         </recipe>
 
-        <recipe name="resourceCompost" craft_area="compostMixer" count="10" craft_time="10" craft_exp_gain="1">
+        <recipe name="resourceCompost" craft_area="compostMixer" count="2" craft_time="10" craft_exp_gain="1">
+            <ingredient name="resourceWoodChips" count="750"/>
+        </recipe>
+
+        <recipe name="resourceCompost" craft_area="compostMixer" count="3" craft_time="10" craft_exp_gain="1">
             <ingredient name="resourceYuccaFibers" count="15"/>
-            <ingredient name="resourceCornStock" count="3"/>
-            <ingredient name="resourceWoodChips" count="250"/>
+            <ingredient name="resourceCornStock" count="1"/>
+            <ingredient name="resourceWoodChips" count="225"/>
         </recipe>
 
         <recipe name="resourceSoil" craft_area="compostMixer" count="3" craft_time="5" craft_exp_gain="1">
@@ -47,11 +47,11 @@
 
         <recipe name="resourceFertilizer" craft_area="compostMixer" count="5" craft_time="10" craft_exp_gain="1">
             <ingredient name="resourceCompost" count="4"/>
-            <ingredient name="resourceCompost" count="1"/>
-            <ingredient name="resourcePotassiumNitratePowder" count="15"/>
+            <ingredient name="resourceLye" count="1"/>
+            <ingredient name="resourcePotassiumNitratePowder" count="10"/>
         </recipe>
 
-        <recipe name="resourceWoodChips" craft_area="compostMixer" count="200" craft_time="10" craft_exp_gain="1">
+        <recipe name="resourceWoodChips" craft_area="compostMixer" count="1000" craft_time="10" craft_exp_gain="1">
             <ingredient name="resourceWood" count="10"/>
         </recipe>
 

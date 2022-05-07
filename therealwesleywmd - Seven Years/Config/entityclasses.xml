@@ -44,7 +44,7 @@
     </append>
 
     <!-- Zombie Stripper || zombiePartyGirl -->
-    <append xpath="/entity_classes/entity_class[@name='zombiePartGirl']">
+    <append xpath="/entity_classes/entity_class[@name='zombiePartyGirl']">
         <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
     </append>
 
@@ -61,7 +61,7 @@
         <drop event="Harvest" count="1" name="apparelDirtyCoatJacketGeneric" tag="allHarvest" prob="0.5"/>
     </append>
 
-    <!-- Reanimated Corpse || zombieSteve-->
+    <!-- Reanimated Corpse || zombieSteve -->
     <append xpath="/entity_classes/entity_class[@name='zombieSteve']">
         <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
         <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
@@ -146,7 +146,7 @@
     </append>
 
     <!-- Zombie LumberJack || zombieLumberjack -->
-    <append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+    <append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
         <drop event="Harvest" count="1" name="apparelDirtyDenimPants" tag="allHarvest" prob="0.5"/>
         <drop event="Harvest" count="1" name="apparelDirtyTShirtPlain" tag="allHarvest" prob="0.5"/>
         <drop event="Harvest" count="1" name="apparelDirtyFlannelShirt" tag="allHarvest" prob="0.5"/>
@@ -155,7 +155,7 @@
     </append>
 
     <!-- Hungry Zombie || zombieFemaleFat -->
-    <append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+    <append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
         <drop event="Harvest" count="1" name="apparelDirtySkirt" tag="allHarvest" prob="0.5"/>
         <drop event="Harvest" count="1" name="apparelDirtyTankTop" tag="allHarvest" prob="0.5"/>
         <drop event="Harvest" count="7" name="resourceAnimalFat" tag="butcherHarvest"/>
